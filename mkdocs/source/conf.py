@@ -34,7 +34,7 @@ latex_elements = {
 }
 
 latex_documents = [
-    ('index','java.txt', u'《Java笔记》',
+    ('index','java.tex', u'《Java笔记》',
     u'郑攀', 'howto',),
 ]
 
