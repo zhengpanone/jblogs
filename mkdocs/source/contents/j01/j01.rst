@@ -6,6 +6,32 @@
 ======
 
     重写是子类对父类的允许访问的方法的实现过程进行编写！，返回值和形参都不能改变。即外壳不变，核心重写！
+    重写好处：子类可以根据需要，定义特定于自己的行为，即子类能够根据需要实现父类的方法
+
+::
+
+ class Animal{
+    public viod move(){
+        System.out.println("Animal can move!");
+    }
+ }
+
+ class Dog extends Animal{
+    public viod move(){
+        System.out.println("Dog can run and walk!");
+    }
+ }
+
+ public class TestDog{
+    public static void main(String args[]){
+        Animal a = new Animal();
+        Animal b = new Dog();
+        a.move;
+        b.move();
+    }
+ }
+
+    在编译阶段，只是检查参数的引用类型，然而在运行时，JVM指定对象的类型并且运行该对象的方法。因此在上面的例子中，之所以能编译成功，是因为Animal类中存在move方法，然而运行时，运行的是特定对象的方法。
 
 
 
@@ -15,7 +41,7 @@
 
 =======
 参考文档
-=======
+
 
 微信公众号： java自学教程 https://mp.weixin.qq.com/s/-g_yKrstFfTu0Ckk85LLpg
 
