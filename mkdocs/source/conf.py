@@ -34,8 +34,8 @@ latex_elements = {
 }
 
 latex_documents = [
-    ('index', u'Pan\'s Blog Documentation',u'郑攀','howto'
-    ),
+    ('index', u'《Java笔记》',
+    u'郑攀', 'howto'),
 ]
 
 man_pages = [
