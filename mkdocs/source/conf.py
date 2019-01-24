@@ -46,8 +46,8 @@ latex_elements = {
 }
 
 latex_documents = [
-    ('index', 'PansBlog.tex', 'Pan\'s Blog Documentation',
-     'Pan', 'howto'),
+    ('index', 'Pan\'s Blog Documentation',
+    ),
 ]
 
 man_pages = [
