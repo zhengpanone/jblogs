@@ -30,12 +30,15 @@ latex_elements = {
     'inputenc': '',  # 必须
     'utf8extra': '',  # 必须
     # Additional stuff for the LaTeX preamble.
-    'preamble': r'\usepackage{werkzeugstyle}',
+    'preamble': r'''
+    \usepackage{xeCJK}
+    \usepackage{indentfirst}
+    ''',
 }
 
 latex_documents = [
-    ('index','mkdocs.tex', u'《Java笔记》',
-    u'郑攀', 'howto',),
+    ('index', 'mkdocs.tex', u'《Java笔记》',
+     u'郑攀', 'howto',),
 ]
 
 man_pages = [
