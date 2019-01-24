@@ -8,7 +8,6 @@ Welcome to Pan's Blog's documentation!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
    :glob:
 
    copyright
@@ -17,13 +16,5 @@ Welcome to Pan's Blog's documentation!
    aboutme
    roadmap
 
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
 
 
