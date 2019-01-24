@@ -13,8 +13,7 @@ Welcome to Pan's Blog's documentation!
    copyright
    preface
    chapters/*
-   aboutme
-   roadmap
+  
 
 
 
