@@ -56,8 +56,6 @@ man_pages = [
 ]
 
 
-
-
 texinfo_documents = [
     ('index', 'PansBlog', 'Pan\'s Blog Documentation',
      u'郑攀', 'PansBlog', 'One line description of project.',
@@ -65,34 +63,17 @@ texinfo_documents = [
 ]
 
 
-
 epub_title = project
-
-# The unique identifier of the text. This can be a ISBN number
-# or the project homepage.
-#
-# epub_identifier = ''
-
-# A unique identification for the text.
-#
-# epub_uid = ''
-
-# A list of files that should not be packed into the epub file.
 epub_exclude_files = ['search.html']
-
-
-# -- Extension configuration -------------------------------------------------
-
-# -- Options for intersphinx extension ---------------------------------------
-
-# Example configuration for intersphinx: refer to the Python standard library.
 intersphinx_mapping = {'https://docs.python.org/': None}
-
-# -- Options for todo extension ----------------------------------------------
-
-# If true, `todo` and `todoList` produce output, else they produce nothing.
 todo_include_todos = True
 
 
+on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
+
+if not on_rtd:
+    import sphinx_rtd_theme
+    html_theme = 'sphinx_rtd_theme'
+    html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 _exts = "../exts"
 sys.path.append(os.path.abspath(_exts))
