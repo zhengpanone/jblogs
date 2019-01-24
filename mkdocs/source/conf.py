@@ -35,7 +35,7 @@ latex_elements = {
 
 latex_documents = [
     ('index', u'《Java笔记》',
-    u'郑攀', 'howto'),
+    u'郑攀', 'howto','add'),
 ]
 
 man_pages = [
