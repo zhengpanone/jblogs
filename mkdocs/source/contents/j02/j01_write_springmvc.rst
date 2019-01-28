@@ -13,6 +13,10 @@
 1. 用户发送请求到前端控制器DispatcherServlet
 #. DispatcherServlet收到请求调用HandlerMapping处理器。
 #. 处理器映射器根据url找到具体处理器，生成处理器对象及处理器拦截器（如果有则生成）一并返回给DIspatcherServlet
+#. DIspatcherServlet通过HandlerAdapter处理器适配器调用处理器
+#. 执行处理器（Controller，也叫后端控制器）
+#. Controller执行完成返回ModelAndView
+#. HandlerAdapter将controller执行结果ModelAndView返回给DispatcherServlet
 
 
 参考文档
