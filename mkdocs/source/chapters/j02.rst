@@ -1,5 +1,5 @@
 ==================
-java基础知识
+第二章 Spring MVC框架
 ==================
 
 
@@ -7,4 +7,4 @@ java基础知识
    :maxdepth: 1
    :glob:
 
-   ../contents/j01/*
+   ../contents/j02/*
