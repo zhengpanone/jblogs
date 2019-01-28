@@ -38,8 +38,22 @@
 
 
 
+Java中2*（i*i）比2*i*i快
+===========================
 
+::
 
+ public static viod main(String[] args){
+    long startTime = System.nannoTime();
+    int n = 0;
+    for (int i =0;i<1000000000;i++){
+        n+ = 2*i*i
+    }
+    System.out.println((double)(System.nannoTime()-startTime)/1000000000+"S");
+    System.out.println("n="+n);
+ }
+
+2*i*i 进行了大量的堆栈操作，因此，需要保存大量的中间结果；而 2*(i*i) 只有少量的堆栈操作。显而易见，2*(i*i) 比 2*i*i 快是由于 JIT 优化的结果。
 
 参考文档
 ===========
