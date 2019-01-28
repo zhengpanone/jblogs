@@ -108,8 +108,7 @@
 参考文档
 ===========
 
-微信公众号：  `好好学java`__
-.. __: https://mp.weixin.qq.com/s/Nq_-8OFyQfe1ysNa6g3n6g
+微信公众号：`好好学java <https://mp.weixin.qq.com/s/Nq_-8OFyQfe1ysNa6g3n6g>` _ 
 
 
 

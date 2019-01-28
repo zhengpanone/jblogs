@@ -14,7 +14,7 @@ __ project_
 =========================
 
 .. _python: https://mblogs.readthedocs.io/en/latest/index.html
-__ project_
+__ python_
 
 
 `生物信息基础知识`__
