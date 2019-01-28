@@ -64,6 +64,47 @@
 
  }
 
+二、梳理SpringMVC的设计思路
+===========================================
+
+1、读取配置
+>>>>>>>>>>>>>>>>>>>>>
+
+|image2|
+
+从图可以看出，SpringMVC本质上是一个Servlet，这个Servlet继承自HttpServlet。FrameworkServlet负责初始化SpringMVC的容器，并将Spring容器设置为父容器。
+
+为了读取web.xml中的配置，用到ServletConfig这个类，他代表当前Servlet在web.xml中的配置信息。通过web.xml中加载自己写的MyDispatcherServlet和读取配置文件。
+
+2、初始化阶段
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+实现：
+
+- 加载配置文件
+- 扫码用户配置包下面的所有类
+- 拿到扫描到的类，通过反射机质，实例化。并放到ioc容器中（Map的键值对beanName-bean）beanName默认是首字母小写
+- 初始化HandlerMapping，这里其实就是把url和method对应起来放在一个k-v的Map中，在运行阶段取出
+
+3、运行阶段
+>>>>>>>>>>>>>>>>>>>>>
+
+每次请求将会调用doGet 或doPost方法，所以统一运行阶段都放在doDispatch方法里处理，它会根据url请求去HandlerMapping中匹配对应的Method，然后利用反射机制调用Controller中对应的方法，并得到结果返回。包括以下功能：
+
+- 异常拦截
+- 获取请求传入的参数并处理参数
+- 通过初始化好的handlerMapping中拿出url对应的方法名，反射调用。
+
+3、实现自己的SpringMVC框架
+==================================================
+
+工程及目录结构：
+
+|image3|
+
+
+
+
 参考文档
 ===========
 
@@ -73,3 +114,5 @@
 
 
 .. |image1| image:: ./image/19012801.webp
+.. |image2| image:: ./image/19012802.webp
+.. |image3| image:: ./image/

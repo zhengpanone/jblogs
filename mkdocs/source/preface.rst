@@ -2,20 +2,23 @@
 前言
 ===========
 
-------------------------
-项目主页
-------------------------
 
-https://github.com/zhengpanone/jblogs.git
+`项目主页`__
+===========================
 
-------------------
-Python知识博客
-------------------
+.. _project: https://github.com/zhengpanone/jblogs.git
+__ project_
 
-https://mblogs.readthedocs.io/en/latest/index.html
 
-----------------
-生物信息基础知识
-----------------
+`Python知识博客`__
+=========================
 
-https://bblogs.readthedocs.io/zh/latest/index.html
+.. _python: https://mblogs.readthedocs.io/en/latest/index.html
+__ project_
+
+
+`生物信息基础知识`__
+=========================
+
+.. _bioinfo: https://bblogs.readthedocs.io/zh/latest/index.html
+__ bioinfo_
