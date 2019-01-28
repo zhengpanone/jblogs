@@ -10,6 +10,9 @@
 
 |image1|
 
+1. 用户发送请求到前端控制器DispatcherServlet
+#. DispatcherServlet收到请求调用HandlerMapping处理器。
+#. 处理器映射器根据url找到具体处理器，生成处理器对象及处理器拦截器（如果有则生成）一并返回给DIspatcherServlet
 
 
 参考文档

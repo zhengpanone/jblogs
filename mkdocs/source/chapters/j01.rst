@@ -7,4 +7,4 @@ java基础知识
    :maxdepth: 1
    :glob:
 
-   ../contents/j02/*
+   ../contents/j01/*
