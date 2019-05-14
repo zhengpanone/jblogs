@@ -23,6 +23,7 @@ JDK安装路径下目录
 ======================
 
  - bin目录: 存放一些可执行程序
+ 
     - 如 javac.exe(java编译器)、java.exe(运行工具)、jar.exe(打包工具)、javadoc.exe(文档生成工具)等
  - db目录: db目录是一个小型的数据库。从JDK6.0开始,Java中引用了一个新成员JavaDB,是一个纯Java实现、开源的数据库管理系统。这个数据库不仅轻便,而且支持JDBC 4.0所有规范,在学校JDBC时,不再需要额外安装一个数据库软件,直接使用JavaDB即可。
  - jre目录: jre是 Java Runtime Environment的缩写,此目录是java运行时的环境的根目录,包括Java虚拟机,运行时的类库,Java应用启动器及一个bin目录,不包含开发环境中的开发工具包
