@@ -10,18 +10,6 @@ Java 下载与安装
 #. 点击jdk-8u191-windows-x64.exe，选择路径为jdk8，继续。
 #. 在选择安装路径的时候选择取消，此时免安装版本的文件已经存在于jdk8中。文件目录如下：|image1|
 
-
-
-
-
-.. |image1| image:: ./image/20190404133616.png
-.. |image2| image:: ./image/20190516114339.png
-.. |image3| image:: ./image/20190516133029.png
-.. |image4| image:: ./image/20190516133138.png
-.. |image5| image:: ./image/20190516133332.png
-
-
-
 配置JAVA环境变量
 ====================================
 
@@ -68,3 +56,12 @@ maven\conf\settings.xml文件
 ::
 
  <localRepository>/path/to/local/repo</localRepository>
+
+
+
+
+.. |image1| image:: ./image/20190404133616.png
+.. |image2| image:: ./image/20190516114339.png
+.. |image3| image:: ./image/20190516133029.png
+.. |image4| image:: ./image/20190516133138.png
+.. |image5| image:: ./image/20190516133332.png
