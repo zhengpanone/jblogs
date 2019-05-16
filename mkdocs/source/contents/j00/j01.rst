@@ -16,10 +16,13 @@ Java 下载与安装
 
 .. |image1| image:: ./image/20190404133616.png
 .. |image2| image:: ./image/20190516114339.png
+.. |image3| image:: ./image/20190516133029.png
+.. |image4| image:: ./image/20190516133138.png
+.. |image5| image:: ./image/20190516133332.png
 
 
 
-配置环境变量
+配置JAVA环境变量
 ====================================
 
 系统变量——新建——变量名“JAVA_HOME”，变量值“Java的安装路径” |image2|
@@ -33,3 +36,35 @@ CLASSPATH环境变量指定了Java程序编译或运行时所用到的类的搜�
 JAVA_HOME的值就是JDK的安装路径，单独声明一个这样的值，是为了可以如果JDK路径发生变化时，只需要修改JAVA_HOME的值就可以，不需要每处配置都修改，这也是为什么JAVA_HOME可以不配置的原因。
 当需要使用到JDK的路径时，可以采用"%JAVA_HOME%"的方式引用。
 
+配置MAVEN环境变量
+====================================
+
+**下载**
+
+前往https://maven.apache.org/download.cgi下载最新版的Maven程序|image3|
+
+**将文件解压到目录
+
+|image4|
+
+**新建环境变量**
+MAVEN_HOME;D:/\development/\apache-maven-3.6.1
+|image5|
+
+**编辑环境变量**
+Path,追加%MAVEN_HOME%/\bin
+
+**检查maven是否安装成功**
+
+::
+
+ mvn -v
+
+配置MAVEN本地仓库
+===============================
+
+maven\conf\settings.xml文件
+
+::
+
+ <localRepository>/path/to/local/repo</localRepository>
