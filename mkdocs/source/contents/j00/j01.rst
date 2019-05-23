@@ -31,7 +31,7 @@ JAVA_HOME的值就是JDK的安装路径，单独声明一个这样的值，是�
 
 前往https://maven.apache.org/download.cgi下载最新版的Maven程序|image3|
 
-**将文件解压到目录
+**将文件解压到目录**
 
 |image4|
 
