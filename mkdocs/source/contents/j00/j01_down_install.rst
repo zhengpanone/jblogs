@@ -59,6 +59,26 @@ maven\conf\settings.xml文件
 
 
 
+linux版本java安装
+=================================
+
+::
+
+ jdk版本：jdk-7u80-linux-x64.gz
+
+ 上传jdk-7u80-linux-x64.gz到/usr/local/java
+ 解压
+ tar -zxvf jdk-7u80-linux-x64.gz
+
+ 配置环境变量：
+ vi /etc/profile
+ 加入：
+ export JAVA_HOME=/usr/local/java/jdk1.7.0_80
+ export PATH=$JAVA_HOME/bin:$PATH
+
+ 运行：source /etc/profile  使配置文件生效
+
+ 运行：java -version,显示jdk版本，jdk安装成功
 
 .. |image1| image:: ./image/20190404133616.png
 .. |image2| image:: ./image/20190516114339.png
