@@ -50,7 +50,7 @@
 
     // 异常处理
     initHandlerExceptionResolvers(context);
-    
+
     // 有的Handler处理完后并没有设置View也没有设置ViewName，这时就需要从request获取ViewName了，
     //如何从request中获取ViewName就是RequestToViewNameTranslator要做的事情了。
     initRequestToViewNameTranslator(context);
@@ -100,18 +100,14 @@
 
 工程及目录结构：
 
-|image3|
-
 
 
 
 参考文档
 ===========
 
-微信公众号：`好好学java <https://mp.weixin.qq.com/s/Nq_-8OFyQfe1ysNa6g3n6g>`_ 
-
+微信公众号：`Java技术栈 <https://mp.weixin.qq.com/s/36F_fFbGKkRL20DJgX4ahg>`_
 
 
 .. |image1| image:: ./image/19012801.webp
 .. |image2| image:: ./image/19012802.webp
-.. |image3| image:: ./image/

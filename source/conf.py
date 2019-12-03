@@ -5,7 +5,7 @@ import sys
 extensions = ['chinese_search', ]
 templates_path = ['_templates']
 source_suffix = ['.rst', '.md']
-source_encoding = 'utf-8-sig'
+source_encoding = 'utf-8'
 master_doc = 'index'
 project = u'PAN\'s BLOG'
 copyright = u'2018, 郑攀'
@@ -60,5 +60,7 @@ if not on_rtd:
     import sphinx_rtd_theme
     html_theme = 'sphinx_rtd_theme'
     html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+
+highlight_langeuage="java,javascript,python,html"
 _exts = "../exts"
 sys.path.append(os.path.abspath(_exts))

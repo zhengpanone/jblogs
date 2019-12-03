@@ -7,7 +7,9 @@ JRE
 =================
 
 Java Runtime Environment Java运行环境
+
  - 包括Java虚拟机(JVM Java Virtual Machine)和Java程序所需要的核心类库。如果想要运行一个开发好的Java程序,计算机中只需要安装JRE
+
  - JVM + 类库
 
 JDK
@@ -33,7 +35,6 @@ JDK安装路径下目录
 
 
 
-    
 
 
 
