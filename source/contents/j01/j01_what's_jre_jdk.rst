@@ -8,9 +8,9 @@ JRE
 
 Java Runtime Environment Java运行环境
 
- - 包括Java虚拟机(JVM Java Virtual Machine)和Java程序所需要的核心类库。如果想要运行一个开发好的Java程序,计算机中只需要安装JRE
+- 包括Java虚拟机(JVM Java Virtual Machine)和Java程序所需要的核心类库。如果想要运行一个开发好的Java程序,计算机中只需要安装JRE
 
- - JVM + 类库
+- JVM + 类库
 
 JDK
 ======================
@@ -33,10 +33,9 @@ JDK安装路径下目录
  - lib目录: lib时library的缩写,意为Java类库或类文件,是开发工具使用的归档包文件
  - src.zip文件: src.zip 为src文件夹的压缩文件,src中存放的是JDK核心类的源代码,通过查看该文件可以查看Java基础类的源代码
 
+Java代码运行
+====================
 
-
-
-
-
-
+javac 先编译源代码 javac HelloWorld.java 
+java 运行字节码文件 java HelloWorld 
 

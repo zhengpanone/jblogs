@@ -1,0 +1,5 @@
+================
+责任链设计模式
+================
+
+https://mp.weixin.qq.com/s/xBkd3xhA_NtIUG3_bsXqpQ
