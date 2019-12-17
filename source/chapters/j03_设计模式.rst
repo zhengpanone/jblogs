@@ -6,5 +6,5 @@
     :maxdepth: 1
     :glob:
 
-    ../contents/j03/*
+    ../contents/j03_设计模式/*
 

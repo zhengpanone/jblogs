@@ -7,4 +7,4 @@
    :maxdepth: 1
    :glob:
 
-   ../contents/j02/*
+   ../contents/j02_SpringMVC框架/*

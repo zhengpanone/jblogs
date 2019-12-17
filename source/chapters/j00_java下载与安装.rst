@@ -7,4 +7,4 @@ java下载与安装
    :maxdepth: 1
    :glob:
 
-   ../contents/j00/*
+   ../contents/j00_java下载与安装/*
