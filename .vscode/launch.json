@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Demo05Operator",
+            "request": "launch",
+            "mainClass": "Demo05Operator"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Demo04Operator",
+            "request": "launch",
+            "mainClass": "Demo04Operator"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Demo02DataType",
+            "request": "launch",
+            "mainClass": "Demo02DataType"
+        }
+    ]
+}
