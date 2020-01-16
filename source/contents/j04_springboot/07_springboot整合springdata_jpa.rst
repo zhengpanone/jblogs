@@ -22,7 +22,6 @@ JPA核心接口
 5、JPASpecificationExecutor接口 [#]_
 
 .. [#] Repositiory接口使用
->>>>>>>>>>>>>>>>>>>>>>>>>>
 
 1、提供了方法名称命名查询方式
 
@@ -31,7 +30,6 @@ JPA核心接口
 .. [#] CrudRepository接口
 
 .. [#] PagingAndSortingRepository接口使用
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
 .. [#] JpaRepository接口使用
