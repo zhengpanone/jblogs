@@ -1,5 +1,5 @@
 {
-    "restructuredtext.confPath": "${workspaceFolder}\\source",
+    "restructuredtext.confPath": "${workspaceFolder}\\source\\config.py",
     "restructuredtext.linter.extraArgs": [
         "--ignore D000",
         "--ignore D001",

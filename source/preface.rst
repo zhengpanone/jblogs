@@ -13,7 +13,7 @@ __ project_
 `Python知识博客`__
 =========================
 
-.. _python: https://mblogs.readthedocs.io/en/latest/index.html
+.. _python: https://mblogs.readthedocs.io/zh/latest/index.html
 __ python_
 
 

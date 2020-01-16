@@ -491,8 +491,86 @@
 访问静态资源
 ========================
 
+1. SpringBoot从classpath/static的目录下查找
+
+    目录名称必须为static
+
+    classpath 即WEB-INF下面的classes目录
+
+#. ServletContext根目录下查找
+
+    在src/main 下创建文件夹 webapp ,文件夹名称必须为webapp
+
+修改springboot访问静态资源访问路径,在 properties文件里面设置  spring.resources.static-locations 就ok了
+
+spring.resources.static-locations 的默认值是：classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/
+
+.. code-block:: xml
+    :linenos:
+
+    server.port=8081
+    spring.resources.static-locations=classpath:static/images/
 
 
+文件上传
+========================
 
+1. 编写Controller 
 
+.. code-block:: java
+    :linenos:
+
+    package com.zp.controller;
+
+    import org.springframework.web.bind.annotation.RequestMapping;
+    import org.springframework.web.bind.annotation.RestController;
+    import org.springframework.web.multipart.MultipartFile;
+
+    import java.io.File;
+    import java.io.IOException;
+    import java.util.HashMap;
+    import java.util.Map;
+
+    @RestController// @Controller + @ResponseBody
+    public class FileUploadController {
+        @RequestMapping("/fileUploadController")
+        public Map<String, Object> fileUpload(MultipartFile filename) throws IOException {
+            System.out.println(filename.getOriginalFilename());
+            filename.transferTo(new File("./" + filename.getOriginalFilename()));
+            Map<String, Object> map = new HashMap<>();
+            map.put("msg", "ok");
+            return map;
+        }
+
+    }
+
+#. 编写application.properties配置上传文件大小
+
+.. code-block:: properties
+    :linenos:
+
+    # 文件上传大小为200M
+    spring.servlet.multipart.max-file-size=200MB
+    # 请求大小为200M
+    spring.servlet.multipart.max-request-size=200MB
+
+#. 编写前端页面
+
+.. code-block:: html
+    :linenos:
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>文件上传</title>
+    </head>
+    <body>
+    <form action="fileUploadController" method="post" enctype="multipart/form-data">
+        上传文件:<input type="file" name="filename"><br>
+        <input type="submit">
+
+    </form>
+    </body>
+    </html>
 
