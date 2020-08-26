@@ -1,6 +1,11 @@
 ===============
 3.UML类图
 ===============
+UML中描述对象和类之间相互关系的方式包括:依赖(dependency)、关联(Association)、聚合(Aggregation)、组合(Composition)、泛化(Generalization)、实现(Realization)等
+
+- 依赖(Denpendency): 元素A变化会影响元素B,但反之不成立,那么B和A的关系是依赖关系,B依赖A;类属关系和实现关系在语义上讲也是依赖关系,但由于其有更特殊的用途，所以被单独描述。UML中用带箭头的虚线表示Dependency关系，箭头指向被依赖元素。
+
+- **泛化(Generalization)** : 通常所说的继承(特殊个体is kind of 一般个体)关系。UML中用带空心箭头的实线线表示Generalization关系，箭头指向一般个体。
 
 1.类图基础属性
 =======================
