@@ -1,5 +1,5 @@
 ======================================
-第二章 Spring MVC框架
+第二章 Java Web基础
 ======================================
 
 
@@ -7,4 +7,4 @@
    :maxdepth: 1
    :glob:
 
-   ../contents/j02_SpringMVC框架/*
+   ../contents/j02_JavaWeb基础/*

@@ -1,0 +1,4 @@
+<!ELEMENT hr(employee+)>
+<!ELEMENT employee (name,age,salary,department)>
+<!ATTLIST employee no CDATA "">
+<!ELEMENT name (#PCDATA)>

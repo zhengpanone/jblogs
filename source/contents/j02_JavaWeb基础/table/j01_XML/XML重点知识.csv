@@ -1,0 +1,6 @@
+内容,说明
+XML的作用,介绍XML作用以及主要的应用场景
+XML书写语法规则,讲解XML的语法规则
+Java解析XML,利用Dom4j读写XML文档
+XML语义约束,XML中DTD与Schema的作用与区别
+Xpath路径表达式,XML内置的Xpath表达式实现节点查询
