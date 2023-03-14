@@ -22,6 +22,7 @@ html_static_path = ['_static']
 
 htmlhelp_basename = 'PansBlogdoc'
 
+formats = ["htmlzip", "pdf", "epub"]
 
 latex_elements = {
     'papersize': 'a4paper',
@@ -61,6 +62,6 @@ if not on_rtd:
     html_theme = 'sphinx_rtd_theme'
     html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
-highlight_langeuage="java,javascript,python,html"
+highlight_langeuage="java,javascript,python,html,xml"
 _exts = "../exts"
 sys.path.append(os.path.abspath(_exts))
