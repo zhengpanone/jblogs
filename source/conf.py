@@ -1,26 +1,31 @@
 # -*- coding: utf-8 -*-
 import os
 import sys
+import sphinx_rtd_theme
 
-extensions = ['chinese_search', ]
-templates_path = ['_templates']
-source_suffix = ['.rst', '.md']
-source_encoding = 'utf-8'
-master_doc = 'index'
+# project information
 project = u'PAN\'s BLOG'
 copyright = u'2018, 郑攀'
 version = '1.0'
 release = '1.0.0'
 language = 'zh_CN'
+# gengral configuration
+
+extensions = ['chinese_search', 'sphinx_copybutton']
+templates_path = ['_templates']
+source_suffix = ['.rst', '.md']
+source_encoding = 'utf-8'
+master_doc = 'index'
+
 exclude_patterns = []
 
 
-import sphinx_rtd_theme
+
 html_theme = 'sphinx_rtd_theme'
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
-html_static_path = ['_static']
 
-htmlhelp_basename = 'PansBlogdoc'
+html_static_path = ['../build/html/_static']
+htmlhelp_basename = 'Pan\'s Java Blogs'
 
 formats = ["htmlzip", "pdf", "epub"]
 
@@ -58,7 +63,6 @@ texinfo_documents = [
 on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 
 if not on_rtd:
-    import sphinx_rtd_theme
     html_theme = 'sphinx_rtd_theme'
     html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
