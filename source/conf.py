@@ -4,7 +4,7 @@ import sys
 import sphinx_rtd_theme
 
 # project information
-project = u'JAVA BLOG'
+project = u'Go BLOG'
 copyright = u'2018, 郑攀'
 version = '1.0'
 release = '1.0.0'
@@ -16,19 +16,19 @@ templates_path = ['_templates']
 source_suffix = ['.rst', '.md']
 source_encoding = 'utf-8'
 master_doc = 'index'
-
+language = 'zh_CN'
 exclude_patterns = []
 
-
+pygments_style = 'sphinx'
 
 html_theme = 'sphinx_rtd_theme'
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
-
-html_static_path = ['../build/html/_static']
+html_static_path = ['_static']
 htmlhelp_basename = 'Java Blogs'
 
 formats = ["htmlzip", "pdf", "epub"]
 
+# LaTeX 配置
 latex_elements = {
     'papersize': 'a4paper',
     'pointsize': '10pt',
@@ -37,8 +37,8 @@ latex_elements = {
 }
 
 latex_documents = [
-    ('index', 'mkdocs.tex', u'《Java笔记》',
-     u'郑攀', 'howto',),
+    ('index', 'mkdocs.tex', u'《Golang笔记》',
+     u'郑攀', 'manual',),
 ]
 
 man_pages = [
@@ -48,11 +48,10 @@ man_pages = [
 
 
 texinfo_documents = [
-    ('index', 'PansBlog', '《Java博客》',
-     u'郑攀', 'PansBlog', '《Java博客》',
+    ('index', 'PansBlog', '《Golang博客》',
+     u'郑攀', 'PansBlog', '《Golang博客》',
      'Miscellaneous'),
 ]
-
 
 on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 
@@ -60,6 +59,7 @@ if not on_rtd:
     html_theme = 'sphinx_rtd_theme'
     html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
-highlight_langeuage="java,javascript,python,html,xml"
+highlight_langeuage="go,javascript,html"
+
 _exts = "../exts"
 sys.path.append(os.path.abspath(_exts))
