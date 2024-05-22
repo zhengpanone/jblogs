@@ -50,7 +50,9 @@ UML(Unified Modeling Language 统一建模语言)中描述对象和类之间相�
 示例：
 动物依赖氧气和水。调用新陈代谢方法需要氧气类与水类的实例作为参数
 
-|image6|
+.. figure::|image6|
+   :width: 100%
+   :alt: image1
 
 2.2泛化
 :::::::::::
