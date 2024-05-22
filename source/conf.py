@@ -31,17 +31,9 @@ formats = ["htmlzip", "pdf", "epub"]
 
 latex_elements = {
     'papersize': 'a4paper',
-    'pointsize': '16pt',
-    'classoptions': ',oneside', 
+    'pointsize': '10pt',
+    'preamble': '',
     'figure_align': 'htbp',
-    'babel': '',
-    'inputenc': '',  # 必须
-    'utf8extra': '',  # 必须
-    # Additional stuff for the LaTeX preamble.
-    'preamble': r'''
-    \usepackage{xeCJK}
-    \usepackage{indentfirst}
-    ''',
 }
 
 latex_documents = [
