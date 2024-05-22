@@ -61,8 +61,8 @@ man_pages = [
 
 
 texinfo_documents = [
-    ('index', 'PansBlog', '《Golang博客》',
-     u'郑攀', 'PansBlog', '《Golang博客》',
+    ('index', 'PansBlog', '《Java博客》',
+     u'郑攀', 'PansBlog', '《Java博客》',
      'Miscellaneous'),
 ]
 
