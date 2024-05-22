@@ -11,7 +11,7 @@ release = '1.0.0'
 language = 'zh_CN'
 # gengral configuration
 
-extensions = ['chinese_search', 'recommonmark', 'sphinx.ext.autodoc','sphinx_copybutton']
+extensions = ['chinese_search', 'recommonmark', 'sphinx.ext.autodoc','sphinx_copybutton','sphinxcontrib.svg2pdfconverter']
 templates_path = ['_templates']
 source_suffix = ['.rst', '.md']
 source_encoding = 'utf-8'
