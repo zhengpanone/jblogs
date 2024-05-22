@@ -50,9 +50,8 @@ UML(Unified Modeling Language 统一建模语言)中描述对象和类之间相�
 示例：
 动物依赖氧气和水。调用新陈代谢方法需要氧气类与水类的实例作为参数
 
-.. figure::|image6|
-   :width: 100%
-   :alt: image1
+|image6|
+
 
 2.2泛化
 :::::::::::
@@ -71,9 +70,8 @@ UML(Unified Modeling Language 统一建模语言)中描述对象和类之间相�
 示例：
 鸟类继承抽象类动物
 
-.. figure:: ./img/j03_UML图/继承关系.webp
-   :width: 100%
-   :alt: image1
+|image3|
+
 
 （2）实现
 
@@ -85,16 +83,14 @@ UML(Unified Modeling Language 统一建模语言)中描述对象和类之间相�
 使用空心三角形+虚线表示
 比如：大雁需要飞行，就要实现飞()接口
 
-.. figure::|image4|
-   :width: 100%
-   :alt: image1
+|image4|
+
 
 2）棒棒糖表示法
 使用实线表示
 
-.. figure::|image5|
-   :width: 100%
-   :alt: image1
+|image5|
+
 
 
 2.3关联
@@ -109,9 +105,8 @@ UML(Unified Modeling Language 统一建模语言)中描述对象和类之间相�
 示例：
 企鹅需要‘知道’气候的变化，需要‘了解’气候规律。当一个类‘知道’另一个类时，可以用关联。
 
-.. figure::|image7|
-   :width: 100%
-   :alt: image1
+|image7|
+
 
 2.4聚合
 :::::::::::
@@ -125,9 +120,8 @@ UML(Unified Modeling Language 统一建模语言)中描述对象和类之间相�
 示例：
 每一只大雁都属于一个大雁群，一个大雁群可以有多只大雁。当大雁死去后大雁群并不会消失，两个对象生命周期不同。
 
-.. figure::|image8|
-   :width: 100%
-   :alt: image1
+|image8|
+
 
 2.5组合
 :::::::::::

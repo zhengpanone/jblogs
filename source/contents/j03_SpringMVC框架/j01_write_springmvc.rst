@@ -8,9 +8,8 @@
 1、SpringMVC的运行流程
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-.. figure::|image1|
-   :width: 100%
-   :alt: image1
+|image1|
+
 
 1. 用户发送请求到前端控制器DispatcherServlet
 #. DispatcherServlet收到请求调用HandlerMapping处理器。
@@ -72,9 +71,8 @@
 1、读取配置
 >>>>>>>>>>>>>>>>>>>>>
 
-.. figure::|image2|
-   :width: 100%
-   :alt: image1
+|image2|
+
 
 从图可以看出，SpringMVC本质上是一个Servlet，这个Servlet继承自HttpServlet。FrameworkServlet负责初始化SpringMVC的容器，并将Spring容器设置为父容器。
 
@@ -112,5 +110,5 @@
 微信公众号：`Java技术栈 <https://mp.weixin.qq.com/s/36F_fFbGKkRL20DJgX4ahg>`_
 
 
-.. |image1| image:: ./image/19012801.webp
-.. |image2| image:: ./image/19012802.webp
+.. |image1| image:: ./image/19012801.png
+.. |image2| image:: ./image/19012802.png
