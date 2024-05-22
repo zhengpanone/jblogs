@@ -71,7 +71,7 @@ UML(Unified Modeling Language 统一建模语言)中描述对象和类之间相�
 示例：
 鸟类继承抽象类动物
 
-.. figure::|image3|
+.. figure:: ./img/j03_UML图/继承关系.webp
    :width: 100%
    :alt: image1
 
