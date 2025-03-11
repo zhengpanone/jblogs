@@ -50,7 +50,7 @@ Path,追加%MAVEN_HOME%/\bin
 
 **检查maven是否安装成功**
 
-::
+.. code-block:: shell
 
  mvn -v
 
@@ -59,7 +59,7 @@ Path,追加%MAVEN_HOME%/\bin
 
 maven\conf\settings.xml文件
 
-::
+.. code-block:: xml
 
  <localRepository>/path/to/local/repo</localRepository>
 
@@ -68,17 +68,17 @@ maven\conf\settings.xml文件
 linux版本java安装
 =================================
 
-::
+.. code-block:: shell
 
- jdk版本：jdk-7u80-linux-x64.gz
+ # jdk版本：jdk-7u80-linux-x64.gz
 
- 上传jdk-7u80-linux-x64.gz到/usr/local/java
- 解压
+ #上传jdk-7u80-linux-x64.gz到/usr/local/java
+ #解压
  tar -zxvf jdk-7u80-linux-x64.gz
 
- 配置环境变量：
+ #配置环境变量：
  vi /etc/profile
- 加入：
+ # 加入：
  export JAVA_HOME=/usr/local/java/jdk1.7.0_80
  export PATH=$JAVA_HOME/bin:$PATH
 

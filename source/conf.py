@@ -4,14 +4,39 @@ import sys
 import sphinx_rtd_theme
 
 # project information
-project = u'Go BLOG'
+project = u'Java BLOG'
 copyright = u'2018, 郑攀'
 version = '1.0'
 release = '1.0.0'
 language = 'zh_CN'
 # gengral configuration
 
-extensions = ['chinese_search', 'recommonmark', 'sphinx.ext.autodoc','sphinx_copybutton']
+simplepdf_vars = {
+    'primary': '#333333',
+    'links': '#FF3333',
+}
+
+extensions = ['chinese_search', 
+              'recommonmark', 
+              'sphinx.ext.autodoc',
+              'sphinx_copybutton',
+              'sphinx.ext.napoleon',
+              'sphinx.ext.viewcode',
+              'sphinx_markdown_tables',
+              'sphinx.ext.autosectionlabel',
+              'sphinxcontrib.inkscapeconverter',
+            #   'sphinx_simplepdf'
+              ]
+
+# LaTeX配置
+latex_engine = 'xelatex'  # 或者 'pdflatex'，根据你的需求选择
+latex_elements = {
+    'papersize': 'a4paper',
+    'pointsize': '10pt',
+    'preamble': '',
+    'figure_align': 'htbp',
+}
+
 
 # 使用 cairosvg 作为 SVG 转 PDF 的转换器
 svg2pdf_converter = ('cairosvg',)
@@ -50,7 +75,7 @@ latex_elements = {
 }
 
 latex_documents = [
-    ('index', 'mkdocs.tex', u'《Golang笔记》',
+    ('index', 'mkdocs.tex', u'《Java笔记》',
      u'郑攀', 'manual',),
 ]
 
@@ -73,7 +98,7 @@ if not on_rtd:
     html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
 # 配置默认的语法高亮语言
-highlight_language = 'html'
+highlight_language = 'go,javascript,html'
 
 _exts = "../exts"
 sys.path.append(os.path.abspath(_exts))

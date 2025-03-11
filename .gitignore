@@ -3,3 +3,4 @@ doctrees/
 __pycache__/
 *.class
 source/_build/
+venv/
