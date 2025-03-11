@@ -20,11 +20,13 @@ importlib_metadata==7.1.0
 itsdangerous==2.2.0
 Jinja2==3.1.4
 livereload==2.6.3
+Markdown==3.7
 MarkupSafe==2.1.5
 packaging==24.0
 pillow==10.3.0
 pycparser==2.22
 Pygments==2.18.0
+pygments-github-lexers==0.0.5
 pytz==2024.1
 recommonmark==0.7.1
 repoze.sphinx.autointerface==1.0.0
@@ -36,6 +38,7 @@ snowballstemmer==2.2.0
 Sphinx==7.3.7
 sphinx-autobuild==2024.4.16
 sphinx-copybutton==0.5.2
+sphinx-markdown-tables==0.0.17
 sphinx-rtd-theme==2.0.0
 sphinxcontrib-applehelp==1.0.8
 sphinxcontrib-devhelp==1.0.6
