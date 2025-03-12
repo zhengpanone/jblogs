@@ -111,5 +111,5 @@
 微信公众号：`Java技术栈 <https://mp.weixin.qq.com/s/36F_fFbGKkRL20DJgX4ahg>`_
 
 
-.. |image1| image:: ./image/19012801.png
-.. |image2| image:: ./image/19012802.png
+.. |image1| image:: ./images/19012801.png
+.. |image2| image:: ./images/19012802.png

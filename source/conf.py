@@ -26,9 +26,15 @@ extensions = ['chinese_search',
               "sphinx.ext.autosummary", # 用于生成 autodoc 的摘要文档。它会基于 docstring 自动生成类、方法、函数等的简短概要，提供一个概述。
               'sphinx.ext.autosectionlabel',
               'sphinx.ext.imgconverter',  # 用于图像转换 
+              'sphinx.ext.imgmath',
               # 'sphinxcontrib.inkscapeconverter',  # 用于 SVG 转换
             #   'sphinx_simplepdf'
               ]
+
+latex_documents = [
+    ('index', 'mkdocs.tex', u'《Java笔记》',
+     u'郑攀', 'manual',),
+]
 
 # LaTeX配置
 latex_engine = 'xelatex'  # 或者 'pdflatex'，根据你的需求选择
@@ -37,6 +43,17 @@ latex_elements = {
     'pointsize': '10pt',
     'preamble': '',
     'figure_align': 'htbp',
+    'classoptions': ',oneside',
+    'fontpkg': '\\usepackage{fontspec}',
+    'extraclassoptions': '\\XeTeXlinebreaklocale "zh" \\XeTeXlinebreakskip=0pt plus 1pt',
+    
+    'preamble': '''
+        \\setmainfont{Noto Serif CJK SC}
+        \\usepackage{graphicx}
+        \\usepackage{svg}
+         \\svgpath{{./images/}}  # 确保你有正确的 SVG 文件路径
+    ''',
+    
 }
 
 
@@ -70,18 +87,6 @@ htmlhelp_basename = 'Java Blogs'
 
 formats = ["htmlzip", "pdf", "epub"]
 
-# LaTeX 配置
-latex_elements = {
-    'papersize': 'a4paper',
-    'pointsize': '10pt',
-    'preamble': '',
-    'figure_align': 'htbp',
-}
-
-latex_documents = [
-    ('index', 'mkdocs.tex', u'《Java笔记》',
-     u'郑攀', 'manual',),
-]
 
 man_pages = [
     ('index', 'pansblog', 'Pan\'s Blog Documentation',

@@ -203,5 +203,5 @@ SpringMVC 是一种基于 Java 的实现 MVC 设计模型的请求驱动类型�
 :::::::::::
 
 
-.. |image1| image:: ./image/j01_springmvc/01spirngMVC在三层架构的位置.jpg
-.. |image2| image:: ./image/j01_springmvc/SpringMVC执行流程.svg
+.. |image1| image:: ./images/j01_springmvc/01spirngMVC在三层架构的位置.jpg
+.. |image2| image:: ./images/j01_springmvc/SpringMVC执行流程.svg
