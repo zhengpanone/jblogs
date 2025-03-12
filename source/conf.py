@@ -51,7 +51,7 @@ latex_elements = {
         \\setmainfont{Noto Serif CJK SC}
         \\usepackage{graphicx}
         \\usepackage{svg}
-         \\svgpath{{./images/}}  # 确保你有正确的 SVG 文件路径
+         \\svgpath{{./**/images/}}  # 确保你有正确的 SVG 文件路径
     ''',
     
 }
