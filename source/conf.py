@@ -19,14 +19,14 @@ simplepdf_vars = {
 extensions = ['chinese_search', 
               'recommonmark', 
               'sphinx_copybutton',
-              'sphinx.ext.autodoc',
               'sphinx_markdown_tables',
+              'sphinx.ext.autodoc',
               'sphinx.ext.napoleon',
               'sphinx.ext.viewcode', # 允许在文档中显示源代码
               "sphinx.ext.autosummary", # 用于生成 autodoc 的摘要文档。它会基于 docstring 自动生成类、方法、函数等的简短概要，提供一个概述。
               'sphinx.ext.autosectionlabel',
-              'sphinx.ext.imgconverter',  # 用于图像转换 
-              'sphinx.ext.imgmath',
+
+          
               # 'sphinxcontrib.inkscapeconverter',  # 用于 SVG 转换
             #   'sphinx_simplepdf'
               ]
@@ -41,17 +41,19 @@ latex_engine = 'xelatex'  # 或者 'pdflatex'，根据你的需求选择
 latex_elements = {
     'papersize': 'a4paper',
     'pointsize': '10pt',
-    'preamble': '',
     'figure_align': 'htbp',
     'classoptions': ',oneside',
     'fontpkg': '\\usepackage{fontspec}',
     'extraclassoptions': '\\XeTeXlinebreaklocale "zh" \\XeTeXlinebreakskip=0pt plus 1pt',
     
     'preamble': r'''
-        \usetmainfont{Noto Serif CJK SC}
+        \usepackage{fontspec}
+        \usepackage{xeCJK}
         \usepackage{graphicx}    % 确保使用 graphicx 包
-         \usepackage{svg}        % 加载 svg 包
-         \svgpath{{./contents/}}   % 指定存放 SVG 文件的路径
+        \usepackage{svg}        % 加载 svg 包
+        \setmainfont{Noto Serif CJK SC}
+        \setCJKmainfont{SimSun}
+        \svgpath{./contents/}   % 指定存放 SVG 文件的路径
     ''',
     
 }
