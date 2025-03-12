@@ -7,4 +7,8 @@ pipenv install -r requirements.txt
 pipenv requirements > requirements.txt
 pipenv requirements --dev > dev-requirements.txt
 
+
+brew install --cask mactex
+make clean latexpdf
+
 ```

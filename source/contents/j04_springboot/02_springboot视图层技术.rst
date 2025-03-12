@@ -173,6 +173,7 @@
 
 .. literalinclude:: ./code/02_springboot视图层技术/1.展示用户数据.ftl
     :linenos: 
+    :language: html
   
 4. 编写Controller
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

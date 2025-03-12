@@ -11,7 +11,7 @@ JPA是Java Persistence API的简称，中文名Java持久层API，是JDK 5.0注�
 JPA核心接口
 ==================
 
-1、Repositiory接口 [#]_
+1、Repository接口 [#]_
 
 2、CrudRepository接口 [#]_
 
@@ -21,7 +21,7 @@ JPA核心接口
 
 5、JPASpecificationExecutor接口 [#]_
 
-.. [#] Repositiory接口使用
+.. [#] Repository接口使用
 
 1、提供了方法名称命名查询方式
 

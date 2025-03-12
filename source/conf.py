@@ -18,13 +18,15 @@ simplepdf_vars = {
 
 extensions = ['chinese_search', 
               'recommonmark', 
-              'sphinx.ext.autodoc',
               'sphinx_copybutton',
-              'sphinx.ext.napoleon',
-              'sphinx.ext.viewcode',
+              'sphinx.ext.autodoc',
               'sphinx_markdown_tables',
+              'sphinx.ext.napoleon',
+              'sphinx.ext.viewcode', # 允许在文档中显示源代码
+              "sphinx.ext.autosummary", # 用于生成 autodoc 的摘要文档。它会基于 docstring 自动生成类、方法、函数等的简短概要，提供一个概述。
               'sphinx.ext.autosectionlabel',
-              'sphinxcontrib.inkscapeconverter',
+              'sphinx.ext.imgconverter',  # 用于图像转换 
+              # 'sphinxcontrib.inkscapeconverter',  # 用于 SVG 转换
             #   'sphinx_simplepdf'
               ]
 
@@ -38,8 +40,11 @@ latex_elements = {
 }
 
 
+# 使用 magick convert 而不是 convert
+image_converter = "magick"
+
 # 使用 cairosvg 作为 SVG 转 PDF 的转换器
-svg2pdf_converter = ('cairosvg',)
+# svg2pdf_converter = ('cairosvg',)
 
 from sphinx.builders.html import StandaloneHTMLBuilder
 
@@ -57,7 +62,6 @@ exclude_patterns = []
 pygments_style = 'sphinx'
 
 html_theme = 'sphinx_rtd_theme'
-html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 html_static_path = ['_static']
 html_css_files = [
        'css/custom.css',
@@ -95,7 +99,6 @@ on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 
 if not on_rtd:
     html_theme = 'sphinx_rtd_theme'
-    html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
 # 配置默认的语法高亮语言
 highlight_language = 'go,javascript,html'
