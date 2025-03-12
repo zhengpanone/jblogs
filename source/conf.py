@@ -47,11 +47,11 @@ latex_elements = {
     'fontpkg': '\\usepackage{fontspec}',
     'extraclassoptions': '\\XeTeXlinebreaklocale "zh" \\XeTeXlinebreakskip=0pt plus 1pt',
     
-    'preamble': '''
-        \\setmainfont{Noto Serif CJK SC}
-        \\usepackage{graphicx}
-        \\usepackage{svg}
-         \\svgpath{{./**/images/}}  # 确保你有正确的 SVG 文件路径
+    'preamble': r'''
+        \usetmainfont{Noto Serif CJK SC}
+        \usepackage{graphicx}    % 确保使用 graphicx 包
+         \usepackage{svg}        % 加载 svg 包
+         \svgpath{{./contents/}}   % 指定存放 SVG 文件的路径
     ''',
     
 }
