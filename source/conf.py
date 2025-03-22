@@ -3,21 +3,21 @@ import os
 import sys
 import sphinx_rtd_theme
 
-# project information
+# -- Project information -----------------------------------------------------
+
 project = u'Java BLOG'
 copyright = u'2018, 郑攀'
 version = '1.0'
 release = '1.0.0'
 language = 'zh_CN'
-# gengral configuration
+
 
 simplepdf_vars = {
-    'primary': '#333333',
-    'links': '#FF3333',
+  'primary': '#333333',
+  'links': '#FF3333',
 }
 
-extensions = ['chinese_search', 
-              'recommonmark', 
+extensions = ['recommonmark', 
               'sphinx_copybutton',
               'sphinx_markdown_tables',
               'sphinx.ext.autodoc',
@@ -43,19 +43,6 @@ latex_elements = {
     'pointsize': '10pt',
     'figure_align': 'htbp',
     'classoptions': ',oneside',
-    'fontpkg': '\\usepackage{fontspec}',
-    'extraclassoptions': '\\XeTeXlinebreaklocale "zh" \\XeTeXlinebreakskip=0pt plus 1pt',
-    
-    'preamble': r'''
-        \usepackage{fontspec}
-        \usepackage{xeCJK}
-        \usepackage{graphicx}    % 确保使用 graphicx 包
-        \usepackage{svg}        % 加载 svg 包
-        \setmainfont{Noto Serif CJK SC}
-        \setCJKmainfont{SimSun}
-        \svgpath{./contents/}   % 指定存放 SVG 文件的路径
-    ''',
-    
 }
 
 
@@ -80,7 +67,10 @@ exclude_patterns = []
 
 pygments_style = 'sphinx'
 
+
 html_theme = 'sphinx_rtd_theme'
+html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+
 html_static_path = ['_static']
 html_css_files = [
        'css/custom.css',
@@ -106,6 +96,7 @@ on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 
 if not on_rtd:
     html_theme = 'sphinx_rtd_theme'
+    html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
 # 配置默认的语法高亮语言
 highlight_language = 'go,javascript,html'

@@ -141,15 +141,15 @@ UML(Unified Modeling Language 统一建模语言)中描述对象和类之间相�
 链接：https://www.jianshu.com/p/57620b762160
 
 
-.. |image1| image:: ./img/j03_UML图/01_UML类图.png
-.. |image2| image:: ./img/j03_UML图/UML图.png
-.. |image3| image:: ./img/j03_UML图/继承关系.webp
-.. |image4| image:: ./img/j03_UML图/矩形表示法.webp
-.. |image5| image:: ./img/j03_UML图/棒棒糖表示法.webp
-.. |image6| image:: ./img/j03_UML图/依赖关系.webp
-.. |image7| image:: ./img/j03_UML图/关联关系.webp
-.. |image8| image:: ./img/j03_UML图/聚合关系.webp
-.. |image9| image:: ./img/j03_UML图/组合关系.png
+.. |image1| image:: ./images/j03_UML图/UML类图.png
+.. |image2| image:: ./images/j03_UML图/UML图.png
+.. |image3| image:: ./images/j03_UML图/继承关系.png
+.. |image4| image:: ./images/j03_UML图/矩形表示法.png
+.. |image5| image:: ./images/j03_UML图/棒棒糖表示法.png
+.. |image6| image:: ./images/j03_UML图/依赖关系.png
+.. |image7| image:: ./images/j03_UML图/关联关系.png
+.. |image8| image:: ./images/j03_UML图/聚合关系.png
+.. |image9| image:: ./images/j03_UML图/组合关系.png
 
 .. [One] 大话设计模式
 
