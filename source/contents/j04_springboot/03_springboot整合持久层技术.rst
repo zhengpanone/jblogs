@@ -1,5 +1,5 @@
 ====================================
-3、SpringBoot整合持久层技术
+SpringBoot整合持久层技术
 ====================================
 
 SpringBoot+SpringMVC+MyBatis

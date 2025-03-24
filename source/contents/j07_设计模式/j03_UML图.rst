@@ -1,5 +1,5 @@
 ===============
-3.UML
+UML
 ===============
 UML(Unified Modeling Language 统一建模语言)中描述对象和类之间相互关系的方式包括:依赖(dependency)、关联(Association)、聚合(Aggregation)、组合(Composition)、泛化(Generalization)、实现(Realization)等
 

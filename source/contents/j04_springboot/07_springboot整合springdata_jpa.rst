@@ -1,5 +1,5 @@
 ======================================
-7、SpringBoot整合Spring Data JPA
+SpringBoot整合Spring Data JPA
 ======================================
 
 概念

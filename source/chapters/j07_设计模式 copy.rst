@@ -3,7 +3,8 @@
 ===================
 
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
+    :numbered:
     :glob:
 
     ../contents/j07_设计模式/*

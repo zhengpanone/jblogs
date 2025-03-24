@@ -4,7 +4,8 @@
 
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
+   :numbered:
    :glob:
 
    ../contents/j02_JavaWeb基础/*

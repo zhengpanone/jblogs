@@ -1,5 +1,5 @@
 ==============
-1、XML
+XML
 ==============
 
 - XML全称 EXtensible Markup Language,可扩展标记语言
