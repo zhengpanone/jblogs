@@ -1,5 +1,5 @@
 ===========================================
-Java 下载与安装
+1. Java 下载与安装
 ===========================================
 
 如何由jdk的安装版本改成非安装版本
@@ -68,8 +68,6 @@ maven\conf\settings.xml文件
 .. code-block:: xml
 
  <localRepository>/path/to/local/repo</localRepository>
-
-
 
 linux版本java安装
 =================================
