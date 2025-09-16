@@ -54,7 +54,6 @@ SpringBoot入门
     添加package com.zp.controller,新建文件HelloWorldController.java
 
     .. code-block:: java
-        :linenos:
 
         package com.zp.controll;
 
@@ -86,7 +85,6 @@ SpringBoot入门
     在package下新建文件App.java
 
     .. code-block:: java
-        :linenos:
 
         package com.zp;
 
@@ -108,7 +106,7 @@ SpringBoot入门
 
 1. 通过注解扫描完成Servlet组件的注册
 
- 1. 编写servlet
+ 2. 编写servlet
 
      创建com.zp.servlet的package,新建FirstServlet
 
@@ -387,7 +385,6 @@ SpringBoot入门
  1. 编写listener
 
     .. code-block:: java
-        :linenos:
 
         package com.zp.listener;
 

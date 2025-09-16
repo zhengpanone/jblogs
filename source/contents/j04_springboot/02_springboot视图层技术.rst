@@ -155,10 +155,12 @@ SpringBoot视图层技术
 整合freemarker
 ======================
 
-1. 修改pom.xml,
+修改pom.xml,
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-2. 创建springboot的全局配置文件,application.properties
+.. _freemarker_config:
+
+创建spring boot的全局配置文件,application.properties
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 .. code-block:: properties
@@ -166,16 +168,15 @@ SpringBoot视图层技术
 
     spring.freemarker.suffix=.ftlh
 
-3. 编写ftlh模板
+编写ftlh模板
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 **SpringBoot要求模板形式的视图层技术的文件必须放到src/main/resources目录下必须要有一个文件夹名为templates**
 
 .. literalinclude:: ./code/02_springboot视图层技术/1.展示用户数据.ftl
-    :linenos: 
     :language: html
   
-4. 编写Controller
+编写Controller
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 .. code-block:: java
@@ -213,17 +214,21 @@ SpringBoot视图层技术
 
 templates: 该目录是安全的,意味该目录下的内容是不允许外界直接访问的
 
-1. 修改pom.xml
+.. _Thymeleaf_pom.xml:
+
+修改pom.xml
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 与freemarker类似
 
-2. 编写Controller
+.. _Thymeleaf_controller:
+
+编写Controller
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 与freemarker类似
 
-3. 编写Thymeleaf模板
+编写Thymeleaf模板
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 .. code-block:: html
@@ -246,7 +251,7 @@ templates: 该目录是安全的,意味该目录下的内容是不允许外界�
 Thymeleaf语法详解
 ===================================
 
-1. 变量输出与字符串操作
+变量输出与字符串操作
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 1. 页面中输出值, th:text="${msg}" 
@@ -277,7 +282,7 @@ Thymeleaf语法详解
 
 
 
-2. 日期格式化处理
+日期格式化处理
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 格式化日期默认以浏览器默认语言为标准, th:text="#dates.format(key)"
@@ -291,10 +296,10 @@ Thymeleaf语法详解
     <span th:text="${#dates.month(date)}"></span>
     <span th:text="${#dates.day(date)}"></span>
 
-3. 条件判断
+条件判断
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-1. th:if 
+th:if 
 ::::::::::::::::::::::::
 
 .. code-block:: html
@@ -306,7 +311,7 @@ Thymeleaf语法详解
         性别: <span th:text="${sex}"></span>
     </span>
 
-2. th:switch
+th:switch
 ::::::::::::::::::::::::
 
 .. code-block:: html
@@ -318,7 +323,7 @@ Thymeleaf语法详解
         <span th:case=3>ID为3</span>
     </div>
 
-4. 迭代遍历
+迭代遍历
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 th:each 
@@ -385,7 +390,7 @@ th:each迭代Map
         </tr>
     </table>
 
-5. 域对象操作
+域对象操作
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 .. code-block:: java
@@ -399,7 +404,7 @@ th:each迭代Map
             return "index2";
         }
 
-1、HttpServletRequest
+HttpServletRequest
 ::::::::::::::::::::::::::::::::::::::
 
 .. code-block:: java
@@ -413,7 +418,7 @@ th:each迭代Map
     Request:<span th:text="${#httpServletRequest.getAttribute('req')}"></span>
 
 
-2、HttpSession
+HttpSession
 ::::::::::::::::::::::::::::::::::::::
 
 .. code-block:: java
@@ -426,7 +431,7 @@ th:each迭代Map
 
     Session:<span th:text="${session.sess}"></span>
    
-3、ServletContext
+ServletContext
 ::::::::::::::::::::::::::::::::::::::
 
 .. code-block:: java
@@ -439,7 +444,7 @@ th:each迭代Map
 
     Application:<span th:text="${application.app}"></span>
 
-6. URL表达式
+URL表达式
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 th:href

@@ -17,19 +17,20 @@ simplepdf_vars = {
   'links': '#FF3333',
 }
 
-extensions = ['recommonmark', 
-              'sphinx_copybutton',
-              'sphinx_markdown_tables',
-              'sphinx.ext.autodoc',
-              'sphinx.ext.napoleon',
-              'sphinx.ext.viewcode', # 允许在文档中显示源代码
-              "sphinx.ext.autosummary", # 用于生成 autodoc 的摘要文档。它会基于 docstring 自动生成类、方法、函数等的简短概要，提供一个概述。
-              'sphinx.ext.autosectionlabel',
-
-          
-              # 'sphinxcontrib.inkscapeconverter',  # 用于 SVG 转换
+extensions = [
+            'sphinx.ext.viewcode', # 允许在文档中显示源代码
+            "sphinx.ext.autosummary", # 用于生成 autodoc 的摘要文档。它会基于 docstring 自动生成类、方法、函数等的简短概要，提供一个概述。
+            'chinese_search', 
+            'myst_parser', 
+            'sphinx_markdown_tables',
+            'sphinx_copybutton',
+            'sphinx.ext.todo',
+            'sphinx.ext.autodoc',
+            'sphinx.ext.napoleon',
+            'sphinx.ext.autosectionlabel',
+            # 'sphinxcontrib.inkscapeconverter',  # 用于 SVG 转换
             #   'sphinx_simplepdf'
-              ]
+            ]
 
 latex_documents = [
     ('index', 'mkdocs.tex', u'《Java笔记》',
@@ -99,7 +100,10 @@ if not on_rtd:
     html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
 # 配置默认的语法高亮语言
-highlight_language = 'go,javascript,html'
+highlight_language = "python,go,javascript,html,java"
+
+numfig = True
+numfig_secnum_depth = 2
 
 _exts = "../exts"
 sys.path.append(os.path.abspath(_exts))

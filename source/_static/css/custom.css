@@ -2,3 +2,16 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/* 专门给 table.docutils.csv-table 类的表格加样式 */
+table.docutils.csv-table {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+}
+
+table.docutils.csv-table th, table.docutils.csv-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}

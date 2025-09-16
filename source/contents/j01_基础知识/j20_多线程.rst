@@ -1,3 +1,200 @@
 ==========================
 多线程
 ==========================
+
+线程创建的方式
+==========================
+
+|image1|
+
+继承 Thread 类
+-------------------------
+
+**使用方法**
+
+.. code-block:: java
+
+  class MyThread extends Thread {
+    @Override
+    public void run() {
+      System.out.println("线程运行中：" + Thread.currentThread().getName());
+    }
+  }
+
+  public class Main {
+    public static void main(String[] args) {
+      MyThread t1 = new MyThread();
+      t1.start(); // 启动线程
+    }
+  }
+
+
+**优点**:
+
+- 实现简单，直接继承 `Thread` 并重写 `run()` 方法即可。
+- 可以直接调用 `this` 获取当前线程实例。
+
+**缺点**:
+
+- **单继承限制**：Java 不支持多继承，一旦继承了 `Thread`，就无法再继承其他类。
+- **不利于资源共享**：多个线程之间如果要共享数据，必须额外传参或定义静态成员。
+
+**适用场景**:
+
+- 任务逻辑和线程强绑定，且不需要继承其他类时。
+
+
+实现 Runnable 接口
+-------------------------
+
+**使用方法**
+
+.. code-block:: java
+
+  class MyRunnable implements Runnable {
+      @Override
+      public void run() {
+          System.out.println("线程运行中：" + Thread.currentThread().getName());
+      }
+  }
+
+  public class Main {
+      public static void main(String[] args) {
+          Thread t1 = new Thread(new MyRunnable());
+          t1.start();
+      }
+  }
+
+**优点**:
+
+- **避免单继承限制**：实现接口，可以继续继承其他类。
+- **利于资源共享**：多个线程可以共享同一个 `Runnable` 实例中的成员变量。
+
+**缺点**:
+
+- 不能直接获取线程对象的方法（如 `getName()` 需通过 `Thread.currentThread()`）。
+- 没有返回值。
+
+**适用场景**:
+
+- 任务逻辑和线程解耦，希望多个线程共享资源时。
+
+实现 Callable 接口 + FutureTask
+--------------------------------
+
+**使用方法**
+
+.. code-block:: java
+
+  import java.util.concurrent.Callable;
+  import java.util.concurrent.ExecutionException;
+  import java.util.concurrent.FutureTask;
+
+  class MyCallable implements Callable<Integer> {
+      @Override
+      public Integer call() {
+          System.out.println("线程运行中：" + Thread.currentThread().getName());
+          return 42;
+      }
+  }
+
+  public class Main {
+      public static void main(String[] args) throws ExecutionException, InterruptedException {
+          FutureTask<Integer> task = new FutureTask<>(new MyCallable());
+          Thread t1 = new Thread(task);
+          t1.start();
+
+          // 获取返回结果（会阻塞直到任务完成）
+          Integer result = task.get();
+          System.out.println("返回结果：" + result);
+      }
+  }
+
+**优点**:
+
+- 可以返回执行结果（相比 `Runnable` 没有返回值）。
+- 可以抛出异常，利于错误处理。
+
+**缺点**:
+
+- 使用较复杂，需要 `FutureTask` 或线程池包装。
+- 获取结果时需要 `get()`，可能阻塞线程。
+
+**适用场景**:
+
+- 需要任务执行后返回结果，或者需要处理线程执行中的异常时。
+
+使用线程池（Executor 框架）
+--------------------------------
+
+**使用方法**
+
+.. code-block:: java
+
+  import java.util.concurrent.ExecutorService;
+  import java.util.concurrent.Executors;
+
+  public class Main {
+      public static void main(String[] args) {
+          ExecutorService executor = Executors.newFixedThreadPool(3);
+
+          executor.submit(() -> {
+              System.out.println("线程运行中：" + Thread.currentThread().getName());
+          });
+
+          executor.shutdown(); // 关闭线程池
+      }
+  }
+
+**优点**:
+
+- **线程复用**，避免频繁创建和销毁线程，提升性能。
+- 提供多种线程池类型（单线程、固定大小、缓存型、定时任务）。
+- 支持 `Runnable` 和 `Callable`。
+- 管理线程的生命周期，便于控制。
+
+**缺点**:
+
+- 需要合理配置线程池大小，否则可能导致 OOM 或线程资源浪费。
+- 使用不当可能造成线程泄漏。
+
+**适用场景**:
+
+- 高并发、多任务执行场景。
+- Web 服务器、后台任务执行器。
+
+总结对比
+-------------------------
+
+.. list-table::
+   :header-rows: 1
+
+   * - 方式
+     - 是否支持返回值
+     - 是否支持异常
+     - 是否受限继承
+     - 适用场景
+   * - Thread
+     - 否
+     - 否
+     - 是
+     - 简单独立线程
+   * - Runnable
+     - 否
+     - 否
+     - 否
+     - 多线程共享任务
+   * - Callable + FutureTask
+     - 是
+     - 是
+     - 否
+     - 需要结果/异常
+   * - 线程池（Executor）
+     - 是
+     - 是
+     - 否
+     - 高并发/资源管理
+
+
+
+.. |image1| image:: ./image/j20_多线程/image_2025_09_16.png
