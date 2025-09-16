@@ -44,7 +44,7 @@
 .. literalinclude:: ./code/基础知识/Demo01Const.java
     :encoding: utf-8
     :language: java
-    :linenos:
+    
 
 变量
 =============================
@@ -103,7 +103,7 @@
 .. literalinclude:: ./code/基础知识/Demo02DataType.java
     :encoding: utf-8
     :language: java
-    :linenos:
+    
 
 **byte/short/char这三种类型都可以发生数学运算**
 
@@ -123,7 +123,7 @@
 .. literalinclude:: ./code/基础知识/Demo05Operator.java
     :encoding: utf-8
     :language: java
-    :linenos:
+    
 
 复合赋值运算符: +=、 -=、 \*=、 /=、 %=
 

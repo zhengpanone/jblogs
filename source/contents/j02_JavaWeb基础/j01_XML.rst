@@ -26,7 +26,7 @@ DTD
 .. literalinclude:: ./code/j01_XML/hr.dtd
     :encoding: utf-8
     :language: dtd
-    :linenos:
+    
 
 DTD定义节点
 >>>>>>>>>>>>>>>>>>>

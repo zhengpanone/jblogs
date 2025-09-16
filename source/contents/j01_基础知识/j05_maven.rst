@@ -63,7 +63,7 @@ Maven打包跳过测试的4种方式
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 .. code-block:: xml
-   :linenos:
+   
 
    <build>
         <plugins>

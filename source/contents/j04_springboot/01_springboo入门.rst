@@ -12,7 +12,7 @@ SpringBoot入门
  1. 添加springBoot启动父依赖,并指定SpringBoot版本
 
     .. code-block:: xml
-        :linenos:
+        
 
         <!--Spring Boot启动父依赖,并指定spingboot版本-->
         <parent>
@@ -25,7 +25,7 @@ SpringBoot入门
  #. 修改jdk版本
 
     .. code-block:: xml
-        :linenos:
+        
 
         <!--指定jdk版本-->
         <properties>
@@ -35,7 +35,7 @@ SpringBoot入门
  #. 添加springboot启动器
 
     .. code-block:: xml
-        :linenos:
+        
 
         <!--在dependenices中添加springboot的启动器-->
         <dependency>
@@ -111,7 +111,7 @@ SpringBoot入门
      创建com.zp.servlet的package,新建FirstServlet
 
     .. code-block:: java
-        :linenos:
+        
 
         package com.zp.servlet;
 
@@ -148,7 +148,7 @@ SpringBoot入门
      在com.zp的package下新建App.java 
 
     .. code-block:: java
-        :linenos:
+        
 
         package com.zp;
 
@@ -173,7 +173,7 @@ SpringBoot入门
  1. 编写servlet
 
     .. code-block:: java
-        :linenos:
+        
 
         package com.zp.servlet;
 
@@ -195,7 +195,7 @@ SpringBoot入门
  #. 编写启动类
 
     .. code-block:: java
-        :linenos:
+        
         
         package com.zp;
 
@@ -232,7 +232,7 @@ SpringBoot入门
  #. 编写Filter
 
     .. code-block:: java
-        :linenos:
+        
 
         package com.zp.filter;
 
@@ -278,7 +278,7 @@ SpringBoot入门
  #. 编写启动类
 
     .. code-block:: java
-        :linenos:
+        
 
         package com.zp;
 
@@ -302,7 +302,7 @@ SpringBoot入门
  #. 编写servlet
 
     .. code-block:: java
-        :linenos:
+        
 
         package com.zp.filter;
 
@@ -339,7 +339,7 @@ SpringBoot入门
  #. 编写启动类
 
     .. code-block:: java
-        :linenos:
+        
 
         package com.zp;
 
@@ -413,7 +413,7 @@ SpringBoot入门
  #. 编写启动类
 
     .. code-block:: java
-        :linenos:
+        
 
         package com.zp;
 
@@ -438,7 +438,7 @@ SpringBoot入门
  1. 编写listener
 
     .. code-block:: java
-        :linenos:
+        
 
         package com.zp.listener;
 
@@ -459,7 +459,7 @@ SpringBoot入门
  #. 编写启动类
 
     .. code-block:: java
-        :linenos:
+        
 
         package com.zp;
 
@@ -503,7 +503,7 @@ SpringBoot入门
 spring.resources.static-locations 的默认值是：classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/
 
 .. code-block:: xml
-    :linenos:
+    
 
     server.port=8081
     spring.resources.static-locations=classpath:static/images/
@@ -515,7 +515,7 @@ spring.resources.static-locations 的默认值是：classpath:/META-INF/resource
 1. 编写Controller 
 
 .. code-block:: java
-    :linenos:
+    
 
     package com.zp.controller;
 
@@ -544,7 +544,7 @@ spring.resources.static-locations 的默认值是：classpath:/META-INF/resource
 #. 编写application.properties配置上传文件大小
 
 .. code-block:: properties
-    :linenos:
+    
 
     # 文件上传大小为200M
     spring.servlet.multipart.max-file-size=200MB
@@ -554,7 +554,7 @@ spring.resources.static-locations 的默认值是：classpath:/META-INF/resource
 #. 编写前端页面
 
 .. code-block:: html
-    :linenos:
+    
 
     <!DOCTYPE html>
     <html lang="en">

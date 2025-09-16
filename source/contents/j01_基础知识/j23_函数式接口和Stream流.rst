@@ -18,12 +18,12 @@ Java中函数式编程体现就是Lambda表达式, 所有函数式接口就是�
 .. literalinclude:: ./code/23函数式接口和Stream流/functionInterface/MyInterface.java
     :encoding: utf-8
     :language: java
-    :linenos:
+    
 
 .. literalinclude:: ./code/23函数式接口和Stream流/functionInterface/MyInterfaceDemo.java
     :encoding: utf-8
     :language: java
-    :linenos:
+    
 
 函数式接口作为方法的参数
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -31,7 +31,7 @@ Java中函数式编程体现就是Lambda表达式, 所有函数式接口就是�
 .. literalinclude:: ./code/23函数式接口和Stream流/functionInterface/RunnableDemo.java
     :encoding: utf-8
     :language: java
-    :linenos:
+    
 
 函数式接口作为方法的返回值
 >>>>>>>>>>>>>>>>>>>>>>>>>>>

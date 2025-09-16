@@ -9,7 +9,7 @@ SpringBoot视图层技术
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 .. code-block:: xml
-    :linenos:
+    
 
     <!--Spring Boot启动父依赖-->
     <parent>
@@ -68,7 +68,7 @@ SpringBoot视图层技术
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 .. code-block:: properties
-    :linenos:
+    
 
     spring.mvc.view.prefix=/WEB-INF/jsp
     spring.mvc.view.suffix=.jsp
@@ -77,7 +77,7 @@ SpringBoot视图层技术
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 .. code-block:: java
-    :linenos:
+    
 
     package com.zp.controller;
 
@@ -109,7 +109,7 @@ SpringBoot视图层技术
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 .. code-block:: jsp
-    :linenos:
+    
 
     <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -164,7 +164,7 @@ SpringBoot视图层技术
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 .. code-block:: properties
-    :linenos:
+    
 
     spring.freemarker.suffix=.ftlh
 
@@ -180,7 +180,7 @@ SpringBoot视图层技术
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 .. code-block:: java
-    :linenos:
+    
 
     package com.zp.controller;
 
@@ -232,7 +232,7 @@ templates: 该目录是安全的,意味该目录下的内容是不允许外界�
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 .. code-block:: html
-    :linenos:
+    
 
     <!DOCTYPE html>
     <html lang="en" xmlns:th="http://www.thymeleaf.org">
@@ -257,21 +257,21 @@ Thymeleaf语法详解
 1. 页面中输出值, th:text="${msg}" 
 
 .. code-block:: html
-    :linenos:
+    
 
     <span th:text="${msg}"></span>
 
 2. 将值存放到input标签中显示,th:value 
 
 .. code-block:: html
-    :linenos:
+    
 
     <input type="text" th:value="${msg}">
 
 3. 判断内容是否为空, th:text="${#strings.isEmpty(msg)}" 
 
 .. code-block:: html
-    :linenos:
+    
 
     <span th:text="${#strings.isEmpty(msg)}"></span>
     <span th:text="${#strings.contains(msg,'T')}"></span>
@@ -288,7 +288,7 @@ Thymeleaf语法详解
 格式化日期默认以浏览器默认语言为标准, th:text="#dates.format(key)"
 
 .. code-block:: html
-    :linenos:
+    
 
     <span th:text="${#dates.format(date)}"></span>
     <span th:text="${#dates.format(date,'yyyy/MM/dd')}"></span>
@@ -303,7 +303,7 @@ th:if
 ::::::::::::::::::::::::
 
 .. code-block:: html
-    :linenos:
+    
 
     <span th:if="${sex} == '男'"></span>
         性别: <span th:text="${sex}"></span>
@@ -315,7 +315,7 @@ th:switch
 ::::::::::::::::::::::::
 
 .. code-block:: html
-    :linenos:
+    
 
     <div th:switch="${id}">
         <span th:case=1>ID为1</span>
@@ -333,7 +333,7 @@ th:each迭代list
 ''''''''''''''''''''''
 
 .. code-block:: html
-    :linenos:
+    
 
     <table>
     <tr>
@@ -373,7 +373,7 @@ th:each迭代Map
 ''''''''''''''''''''''
 
 .. code-block:: html
-    :linenos:
+    
 
     <table border="1">
         <tr>
@@ -394,7 +394,7 @@ th:each迭代Map
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 .. code-block:: java
-    :linenos:
+    
 
     @RequestMapping("/showInfo2")
         public String showInfo2(HttpServletRequest request, Model model) {
@@ -408,12 +408,12 @@ HttpServletRequest
 ::::::::::::::::::::::::::::::::::::::
 
 .. code-block:: java
-    :linenos:
+    
 
     request.setAttribute("req", "HttpServletRequest");
 
 .. code-block:: html
-    :linenos:
+    
 
     Request:<span th:text="${#httpServletRequest.getAttribute('req')}"></span>
 
@@ -422,12 +422,12 @@ HttpSession
 ::::::::::::::::::::::::::::::::::::::
 
 .. code-block:: java
-    :linenos:
+    
 
     request.getSession().setAttribute("sess", "HttpSession");
 
 .. code-block:: html
-    :linenos:
+    
 
     Session:<span th:text="${session.sess}"></span>
    
@@ -435,12 +435,12 @@ ServletContext
 ::::::::::::::::::::::::::::::::::::::
 
 .. code-block:: java
-    :linenos:
+    
 
     request.getSession().getServletContext().setAttribute("app", "Application");
 
 .. code-block:: html
-    :linenos:
+    
 
     Application:<span th:text="${application.app}"></span>
 
@@ -454,7 +454,7 @@ th:src
 绝对路径
 
 .. code-block:: html
-    :linenos:
+    
 
     <a th:href="@{http://www.baidu.com}">绝对路径</a>
 
@@ -463,7 +463,7 @@ th:src
     相对于当前项目上下文
 
     .. code-block:: html
-        :linenos:
+        
 
         <a th:href="@{/show}">相对路径</a>
 
@@ -471,14 +471,14 @@ th:src
     相对于服务器路径的根
 
     .. code-block:: html
-        :linenos:
+        
 
         <a th:href="@{~/project2/resourcename}">相对于服务器的根</a>
 
 url中实现参数传递
 
 .. code-block:: html
-    :linenos:
+    
 
     <a th:href="@{/show(id=1,name=zhangsan)}">相对路径传参</a>
 
@@ -486,7 +486,7 @@ url中实现参数传递
 url中restful风格进行参数传递
 
 .. code-block:: html
-    :linenos:
+    
 
     <a th:href="@{/path/{id}/show}">相对路径传参</a>
 

@@ -29,7 +29,7 @@ SpringMVC的运行流程
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 .. code-block:: java
-   :linenos:
+   
    
    protected void initStrategies(ApplicationContext context){
 

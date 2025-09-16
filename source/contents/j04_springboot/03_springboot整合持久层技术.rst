@@ -9,7 +9,7 @@ SpringBoot+SpringMVC+MyBatis
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 .. code-block:: xml
-    :linenos:
+    
 
     <?xml version="1.0" encoding="UTF-8"?>
     <project xmlns="http://maven.apache.org/POM/4.0.0"
@@ -86,7 +86,7 @@ SpringBoot+SpringMVC+MyBatis
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 .. code-block:: properties
-    :linenos:
+    
 
     spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
     spring.datasource.url=jdbc:mysql://localhost:3306/ssm
@@ -99,7 +99,7 @@ SpringBoot+SpringMVC+MyBatis
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 .. code-block:: java
-    :linenos:
+    
 
     package com.zp.pojo;
 
@@ -137,7 +137,7 @@ SpringBoot+SpringMVC+MyBatis
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 .. code-block:: java
-    :linenos:
+    
 
     package com.zp.mapper;
 
@@ -152,7 +152,7 @@ SpringBoot+SpringMVC+MyBatis
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 .. code-block:: xml
-    :linenos:
+    
 
     <?xml version="1.0" encoding="UTF-8" ?>
     <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
@@ -169,7 +169,7 @@ SpringBoot+SpringMVC+MyBatis
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 .. code-block:: java
-    :linenos:
+    
 
     package com.zp.service;
 
@@ -185,7 +185,7 @@ SpringBoot+SpringMVC+MyBatis
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 .. code-block:: java
-    :linenos:
+    
 
     package com.zp.service.impl;
 
@@ -213,7 +213,7 @@ SpringBoot+SpringMVC+MyBatis
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 .. code-block:: java
-    :linenos:
+    
 
     package com.zp.controller;
 
@@ -246,7 +246,7 @@ SpringBoot+SpringMVC+MyBatis
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 .. code-block:: html
-    :linenos:
+    
 
     <!DOCTYPE html>
     <html lang="en">
@@ -267,7 +267,7 @@ SpringBoot+SpringMVC+MyBatis
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 .. code-block:: java
-    :linenos:
+    
 
     package com.zp;
 

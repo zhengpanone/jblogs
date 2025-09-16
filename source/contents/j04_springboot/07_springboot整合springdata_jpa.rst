@@ -23,7 +23,7 @@ JPA核心接口
 1、提供了方法名称命名查询方式
 
 .. code-block:: java
-    :linenos:
+    
 
     package com.zp.dao;
 

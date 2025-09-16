@@ -16,7 +16,7 @@ SpringLoader插件
 修改pom.xml
 
 .. code-block:: xml
-    :linenos:
+    
 
     <build>
         <plugins>
@@ -54,7 +54,7 @@ DevTools在不是项目时时重新部署的方式
 修改pom.xml添加devtools的坐标
 
 .. code-block:: xml
-    :linenos:
+    
 
     <dependency>
             <groupId>org.springframework.boot</groupId>
