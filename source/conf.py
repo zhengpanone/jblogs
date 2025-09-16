@@ -2,6 +2,10 @@
 import os
 import sys
 import sphinx_rtd_theme
+import platform
+
+_exts = "../exts"
+sys.path.append(os.path.abspath(_exts))
 
 # -- Project information -----------------------------------------------------
 
@@ -32,42 +36,9 @@ extensions = [
             #   'sphinx_simplepdf'
             ]
 
-latex_documents = [
-    ('index', 'mkdocs.tex', u'《Java笔记》',
-     u'郑攀', 'manual',),
-]
-
-# LaTeX配置
-latex_engine = 'xelatex'  # 或者 'pdflatex'，根据你的需求选择
-latex_elements = {
-    'papersize': 'a4paper',
-    'pointsize': '10pt',
-    'figure_align': 'htbp',
-    'classoptions': ',oneside',
-}
-
-
-# 使用 magick convert 而不是 convert
-image_converter = "magick"
-
-# 使用 cairosvg 作为 SVG 转 PDF 的转换器
-# svg2pdf_converter = ('cairosvg',)
-
-from sphinx.builders.html import StandaloneHTMLBuilder
-
-StandaloneHTMLBuilder.supported_image_types = [
-    'image/svg+xml', 'image/png', 'image/gif', 'image/jpeg'
-]
-
-templates_path = ['_templates']
-source_suffix = ['.rst', '.md']
-source_encoding = 'utf-8'
-master_doc = 'index'
-language = 'zh_CN'
-exclude_patterns = []
-
-pygments_style = 'sphinx'
-
+autosectionlabel_prefix_document = True
+# If true, `todo` and `todoList` produce output, else they produce nothing.
+todo_include_todos = True
 
 html_theme = 'sphinx_rtd_theme'
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
@@ -93,6 +64,56 @@ texinfo_documents = [
      'Miscellaneous'),
 ]
 
+latex_documents = [
+    ('index', 'mkdocs.tex', u'《Java笔记》',
+     u'郑攀', 'manual',),
+]
+
+
+
+# 根据操作系统选择字体
+if platform.system() == 'Windows':
+    cjk_font = 'SimSun'
+elif platform.system() == 'Darwin':  # macOS
+    cjk_font = 'Songti SC'
+else:  # Linux
+    cjk_font = 'Noto Sans CJK SC'
+# LaTeX配置
+latex_engine = 'xelatex'  # 或者 'pdflatex'，根据你的需求选择
+latex_elements = {
+    'papersize': 'a4paper',
+    'pointsize': '16pt',
+    'figure_align': 'htbp',
+    'classoptions': ',oneside',
+    'preamble': r'''
+    \usepackage{xeCJK}
+    \setCJKmainfont{''' + cjk_font + r'''}
+    '''
+}
+
+
+# 使用 magick convert 而不是 convert
+image_converter = "magick"
+
+# 使用 cairosvg 作为 SVG 转 PDF 的转换器
+# svg2pdf_converter = ('cairosvg',)
+
+from sphinx.builders.html import StandaloneHTMLBuilder
+
+StandaloneHTMLBuilder.supported_image_types = [
+    'image/svg+xml', 'image/png', 'image/gif', 'image/jpeg'
+]
+
+templates_path = ['_templates']
+source_suffix = ['.rst', '.md']
+source_encoding = 'utf-8'
+master_doc = 'index'
+language = 'zh_CN'
+exclude_patterns = []
+
+pygments_style = 'sphinx'
+
+
 on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 
 if not on_rtd:
@@ -105,5 +126,11 @@ highlight_language = "python,go,javascript,html,java"
 numfig = True
 numfig_secnum_depth = 2
 
-_exts = "../exts"
-sys.path.append(os.path.abspath(_exts))
+numfig_format = {
+    'figure': '图 %s',
+    'table': '表 %s',
+    'code-block': '代码 %s',
+    'section': '节 %s',
+}
+
+
