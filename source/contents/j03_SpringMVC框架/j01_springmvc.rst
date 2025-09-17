@@ -24,7 +24,7 @@ SpringMVC基础
 - 持久层
     - 常称Dao层。负责数据持久化,包括数据层即数据库和数据库访问层
 
-1.2、MVC模型
+MVC模型
 >>>>>>>>>>>>>>>>>>>
 
 MVC全名Model View Controller,是模型(model)视图(view)控制器(controller)的缩写,是一种用于设计创建web应用程序表现层的模式
@@ -39,19 +39,20 @@ MVC全名Model View Controller,是模型(model)视图(view)控制器(controller)
 - Controller:
     是应用程序中处理用户交互的部分。作用一般就是处理程序逻辑的。
 
-2、SpringMVC概述
+SpringMVC概述
 =========================
 
-2.1、Spring是什么
+Spring是什么
 >>>>>>>>>>>>>>>>>>>>>>>
 
 SpringMVC 是一种基于 Java 的实现 MVC 设计模型的请求驱动类型的轻量级 Web 框架
 
-2.2、SpringMVC在三层架构的位置
+SpringMVC在三层架构的位置
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 |image1|
 
-2.3、 SpringMVC的优势
+SpringMVC的优势
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 1、清晰的角色划分： 
@@ -92,7 +93,7 @@ SpringMVC 是一种基于 Java 的实现 MVC 设计模型的请求驱动类型�
 
 ………………还有比如RESTful风格的支持、简单的文件上传、约定大于配置的契约式编程支持、基于注解的零配置支持等等。
 
-2.4、SpringMVC和Struts2的优略分析 
+SpringMVC和Struts2的优略分析 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 共同点： 
@@ -113,11 +114,11 @@ SpringMVC 是一种基于 Java 的实现 MVC 设计模型的请求驱动类型�
 
     - Struts2 的OGNL 表达式使页面的开发效率相比Spring MVC 更高些，但执行效率并没有比JSTL提升，尤其是struts2的表单标签，远没有html执行效率高。
 
-3、SpringMVC入门案例
+SpringMVC入门案例
 =============================
 
 
-4、SpringMVC执行流程
+SpringMVC执行流程
 ============================
 
 执行流程图
@@ -164,11 +165,11 @@ SpringMVC 是一种基于 Java 的实现 MVC 设计模型的请求驱动类型�
 - ViewResolver: 通过扩展**视图解析器**,支持更多的视图解析,如: jsp、freemarker、pdf、excel等 
 
 
-5、请求参数绑定
+请求参数绑定
 =================
 
 
-6、常用注解
+常用注解
 ==================
 
 @RequestParam

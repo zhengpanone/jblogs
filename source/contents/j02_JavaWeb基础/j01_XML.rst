@@ -12,7 +12,7 @@ XML重点知识
    :widths: 90,100
    :file: table/j01_XML/XML重点知识.csv
    :encoding: utf-8
-   :align: left
+   :align: center
 
 XML语义约束有两种定义方式:**DTD**与**XML Schema**
 

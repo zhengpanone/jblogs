@@ -25,7 +25,7 @@ SpringMVC的运行流程
 
 **从上面可以看出，DispatcherServlet有接收请求，响应结果，转发等作用。有了DispatcherServlet之后，可以减少组件间的耦合度**
 
-2、SpringMVC的九大组件
+SpringMVC的九大组件
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 .. code-block:: java
@@ -66,10 +66,10 @@ SpringMVC的运行流程
 
    }
 
-二、梳理SpringMVC的设计思路
+梳理SpringMVC的设计思路
 ===========================================
 
-1、读取配置
+读取配置
 >>>>>>>>>>>>>>>>>>>>>
 
 |image2|
@@ -79,7 +79,7 @@ SpringMVC的运行流程
 
 为了读取web.xml中的配置，用到ServletConfig这个类，他代表当前Servlet在web.xml中的配置信息。通过web.xml中加载自己写的MyDispatcherServlet和读取配置文件。
 
-2、初始化阶段
+初始化阶段
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 实现：
@@ -89,7 +89,7 @@ SpringMVC的运行流程
 - 拿到扫描到的类，通过反射机质，实例化。并放到ioc容器中（Map的键值对beanName-bean）beanName默认是首字母小写
 - 初始化HandlerMapping，这里其实就是把url和method对应起来放在一个k-v的Map中，在运行阶段取出
 
-3、运行阶段
+运行阶段
 >>>>>>>>>>>>>>>>>>>>>
 
 每次请求将会调用doGet 或doPost方法，所以统一运行阶段都放在doDispatch方法里处理，它会根据url请求去HandlerMapping中匹配对应的Method，然后利用反射机制调用Controller中对应的方法，并得到结果返回。包括以下功能：
@@ -98,7 +98,7 @@ SpringMVC的运行流程
 - 获取请求传入的参数并处理参数
 - 通过初始化好的handlerMapping中拿出url对应的方法名，反射调用。
 
-3、实现自己的SpringMVC框架
+实现自己的SpringMVC框架
 ==================================================
 
 工程及目录结构：

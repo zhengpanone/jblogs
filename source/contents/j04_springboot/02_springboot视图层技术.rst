@@ -5,7 +5,7 @@ SpringBoot视图层技术
 整合jsp
 ================
 
-1. 修改pom.xml
+修改pom.xml
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 .. code-block:: xml
@@ -64,7 +64,7 @@ SpringBoot视图层技术
         </resources>
     </build>
 
-2. 创建springboot的全局配置文件,application.properties
+创建springboot的全局配置文件,application.properties
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 .. code-block:: properties
@@ -73,7 +73,7 @@ SpringBoot视图层技术
     spring.mvc.view.prefix=/WEB-INF/jsp
     spring.mvc.view.suffix=.jsp
 
-3. 创建Controller
+创建Controller
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 .. code-block:: java
@@ -105,7 +105,7 @@ SpringBoot视图层技术
 
 
 
-4. 创建jsp
+创建jsp
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 .. code-block:: jsp
@@ -136,7 +136,7 @@ SpringBoot视图层技术
     </body>
     </html>
 
-5. 注意事项
+注意事项
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
  **错误**
