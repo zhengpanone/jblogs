@@ -197,4 +197,9 @@
 
 
 
-.. |image1| image:: ./image/j20_多线程/image_2025_09_16.png
+.. |image1| raw:: latex
+
+   \begin{figure}[H]
+   \centering
+   \includegraphics[width=\linewidth]{./image/j20_多线程/image_2025_09_16.png}
+   \end{figure}
