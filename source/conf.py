@@ -65,7 +65,7 @@ texinfo_documents = [
 ]
 
 latex_documents = [
-    ('index', 'mkdocs.tex', u'《Java笔记》',
+    ('index', 'jblogs.tex', u'《Java笔记》',
      u'郑攀', 'manual',),
 ]
 
