@@ -5,7 +5,11 @@
 线程创建的方式
 ==========================
 
-|image1|
+.. figure:: ./image/j20_多线程/image_2025_09_16.png
+   :width: 100%
+   :align: center
+   :alt: 多线程执行示意图
+
 
 继承 Thread 类
 -------------------------
@@ -197,9 +201,3 @@
 
 
 
-.. |image1| raw:: latex
-
-  \begin{figure}[p]
-  \centering
-  \includegraphics[width=\textwidth,height=0.9\textheight,keepaspectratio]{./image/j20_多线程/image_2025_09_16.png}
-  \end{figure}
