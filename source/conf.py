@@ -89,13 +89,22 @@ latex_elements = {
     'preamble': r'''
     \usepackage{xeCJK}
     \setCJKmainfont{''' + cjk_font + r'''}
-    \usepackage{float}  % 提供 H 选项
-    \usepackage{placeins}    % 控制图片分页
-    \usepackage{graphicx}
-    \setkeys{Gin}{width=\linewidth,keepaspectratio}
-    \floatplacement{figure}{H}   % 默认所有 figure 固定在当前位置
+    
+    % ===== 图片与浮动体控制 =====
+    \usepackage{float}       % 提供 [H] 参数
+    \usepackage{placeins}    % 控制浮动体不能跨节
+    \usepackage{graphicx}    % 插图
+    \setkeys{Gin}{width=\linewidth,keepaspectratio} % 自动缩放到页面宽度，保持比例
+    \floatplacement{figure}{H}   % 默认所有图片固定在当前位置（不跨页）
+
+    % ===== 图标题优化 =====
     \usepackage{caption}
-    \captionsetup[figure]{belowskip=0pt,aboveskip=5pt} % 调整标题和图的间距
+    \captionsetup[figure]{belowskip=0pt,aboveskip=5pt}
+
+    % ===== 自定义允许跨页的环境 =====
+    \newenvironment{AllowPageBreakFigure}
+      {\begin{figure}[htbp]}
+      {\end{figure}}
     '''
 }
 
