@@ -87,10 +87,15 @@ latex_elements = {
     'figure_align': 'H',  # 强制当前位置
     'classoptions': ',oneside',
     'preamble': r'''
-    # \usepackage{float}  % 提供 H 选项
-    # \floatplacement{figure}{H} % 全局禁止跨页
     \usepackage{xeCJK}
     \setCJKmainfont{''' + cjk_font + r'''}
+    \usepackage{float}  % 提供 H 选项
+    \usepackage{placeins}    % 控制图片分页
+    \usepackage{graphicx}
+    \setkeys{Gin}{width=\linewidth,keepaspectratio}
+    \floatplacement{figure}{H}   % 默认所有 figure 固定在当前位置
+    \usepackage{caption}
+    \captionsetup[figure]{belowskip=0pt,aboveskip=5pt} % 调整标题和图的间距
     '''
 }
 
