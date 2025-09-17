@@ -1,7 +1,7 @@
 {
   "words": [
-    "noinstall",
-    "rustwasm",
-    "toctree"
+    "literalinclude","ftlh","jstl","javax","taglib",
+    "springframework",
+    "toctree","springboot","thymeleaf","freemarker"
   ]
 }
