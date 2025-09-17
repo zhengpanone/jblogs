@@ -83,9 +83,12 @@ latex_engine = 'xelatex'  # 或者 'pdflatex'，根据你的需求选择
 latex_elements = {
     'papersize': 'a4paper',
     'pointsize': '16pt',
-    'figure_align': 'htbp',
+    # 'figure_align': 'htbp', # 允许放在 here/top/bottom/page
+    'figure_align': 'H',  # 强制当前位置
     'classoptions': ',oneside',
     'preamble': r'''
+    # \usepackage{float}  % 提供 H 选项
+    # \floatplacement{figure}{H} % 全局禁止跨页
     \usepackage{xeCJK}
     \setCJKmainfont{''' + cjk_font + r'''}
     '''
