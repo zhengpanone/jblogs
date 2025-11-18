@@ -6,5 +6,15 @@
         "--ignore D004",
         "--ignore D005"
     ],
-    "restructuredtext.confPath": "${workspaceFolder}\\source"
+    "esbonio.server.enabled": true,
+    "esbonio.server.pythonPath": "${workspaceFolder}/.venv/bin/python",
+    "esbonio.sphinx.pythonCommand":  "/Users/mac/code/blog/jblogs/.venv/bin/python",
+
+
+
+    
+    "python.defaultInterpreterPath": "/usr/local/bin/python3",
+    "python.languageServer": "Pylance"
+
+
 }

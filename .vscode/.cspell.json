@@ -2,6 +2,6 @@
   "words": [
     "literalinclude","ftlh","jstl","javax","taglib",
     "springframework",
-    "toctree","springboot","thymeleaf","freemarker"
+    "toctree","springboot","thymeleaf","freemarker","javac","Dfile"
   ]
 }
