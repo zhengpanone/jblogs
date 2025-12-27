@@ -1,6 +1,42 @@
 ======================
-数组
+枚举、集合
 ======================
+
+枚举
+==========================
+
+枚举使用技巧
+--------------------------
+
+枚举可以有自己的方法
+
+.. literalinclude:: ./code/j03_enum_collection/enum_demo/MemberType1.java
+    :language: java
+
+.. literalinclude:: ./code/j03_enum_collection/enum_demo/PriceCalculator.java
+    :language: java
+
+优化版
+
+- 字段 + 统一实现
+- 枚举只描述“数据”，行为一致
+- 去掉匿名类
+
+.. literalinclude:: ./code/j03_enum_collection/enum_demo/MemberType2.java
+    :language: java
+
+枚举 + 策略接口
+
+.. literalinclude:: ./code/j03_enum_collection/enum_demo/DiscountStrategy.java
+    :language: java
+
+.. literalinclude:: ./code/j03_enum_collection/enum_demo/MemberType3.java
+    :language: java
+
+
+集合
+==========================
+
 
 .. note::
 

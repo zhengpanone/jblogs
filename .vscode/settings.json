@@ -1,20 +1,13 @@
 {
-    "restructuredtext.linter.extraArgs": [
-        "--ignore D000",
-        "--ignore D001",
-        "--ignore D002",
-        "--ignore D004",
-        "--ignore D005"
-    ],
     "esbonio.server.enabled": true,
     "esbonio.server.pythonPath": "${workspaceFolder}/.venv/bin/python",
-    "esbonio.sphinx.pythonCommand":  "/Users/mac/code/blog/jblogs/.venv/bin/python",
-
-
-
-    
+    "esbonio.sphinx.pythonCommand": {
+        "command": [
+            "./.venv/bin/python"
+        ],
+    },
+    "liveServer.settings.port": 5501,
+    "esbonio.preview.synchronizeScroll": "bothWays",
     "python.defaultInterpreterPath": "/usr/local/bin/python3",
     "python.languageServer": "Pylance"
-
-
 }
