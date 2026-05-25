@@ -1,13 +1,11 @@
 {
     "esbonio.server.enabled": true,
-    "esbonio.server.pythonPath": "${workspaceFolder}/.venv/bin/python",
-    "esbonio.sphinx.pythonCommand": {
-        "command": [
-            "./.venv/bin/python"
-        ],
-    },
+
+ "python.defaultInterpreterPath": "${workspaceFolder}/.venv/Scripts/python.exe",
+  "esbonio.sphinx.pythonCommand": {
+    "command": ["./.venv/Scripts/python.exe"],
+  },
     "liveServer.settings.port": 5501,
     "esbonio.preview.synchronizeScroll": "bothWays",
-    "python.defaultInterpreterPath": "/usr/local/bin/python3",
     "python.languageServer": "Pylance"
 }

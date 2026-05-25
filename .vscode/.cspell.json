@@ -1,7 +1,17 @@
 {
   "words": [
-    "literalinclude","ftlh","jstl","javax","taglib",
+    "Dfile",
+    "freemarker",
+    "ftlh",
+    "javac",
+    "javax",
+    "jstl",
+    "literalinclude",
+    "smallseg",
+    "springboot",
     "springframework",
-    "toctree","springboot","thymeleaf","freemarker","javac","Dfile"
+    "taglib",
+    "thymeleaf",
+    "toctree"
   ]
 }

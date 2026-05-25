@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 import os
 import sys
-import sphinx_rtd_theme
 import platform
 
 _exts = "../exts"
@@ -41,7 +40,6 @@ autosectionlabel_prefix_document = True
 todo_include_todos = True
 
 html_theme = 'sphinx_rtd_theme'
-html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
 html_static_path = ['_static']
 html_css_files = [
@@ -135,7 +133,6 @@ on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 
 if not on_rtd:
     html_theme = 'sphinx_rtd_theme'
-    html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
 # 配置默认的语法高亮语言
 highlight_language = "python,go,javascript,html,java"
