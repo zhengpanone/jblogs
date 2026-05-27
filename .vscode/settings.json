@@ -6,6 +6,6 @@
     "command": ["./.venv/Scripts/python.exe"],
   },
     "liveServer.settings.port": 5501,
-    "esbonio.preview.synchronizeScroll": "bothWays",
+    "esbonio.preview.synchronizeScroll": "previewWithEditor",
     "python.languageServer": "Pylance"
 }
