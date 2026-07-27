@@ -3,6 +3,7 @@
     "AMQP",
     "Dfile",
     "Fanout",
+    "Flowable",
     "freemarker",
     "ftlh",
     "javac",
