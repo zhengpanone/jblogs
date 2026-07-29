@@ -1,5 +1,6 @@
 {
   "words": [
+    "ACTINST",
     "AMQP",
     "Dfile",
     "Fanout",
@@ -10,6 +11,8 @@
     "javax",
     "jstl",
     "literalinclude",
+    "NVARCHAR",
+    "println",
     "smallseg",
     "springboot",
     "springframework",

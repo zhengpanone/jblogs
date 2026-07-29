@@ -2,6 +2,10 @@
 Java基础面试题
 ====================
 
+.. contents:: 目录
+   :depth: 1
+   :local:
+
 java注解原理
 ===================
 
@@ -192,6 +196,7 @@ Java 注解（Annotation）的原理是基于反射机制和字节码操作实�
           return "TEXT";
       }
   }
+  
 Spring 风格的事务注解
 
 .. code-block:: java
@@ -255,5 +260,9 @@ Java 注解的原理核心是：
 
 
 
+BitMap算法
+====================
+
+https://www.cnblogs.com/myseries/p/10880641.html
 
 
