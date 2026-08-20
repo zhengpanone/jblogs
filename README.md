@@ -12,3 +12,9 @@ brew install --cask mactex
 make clean latexpdf
 
 ```
+
+### Sphinx 自动构建
+
+```shell
+sphinx-autobuild source build/html
+```

@@ -5,9 +5,14 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "esbonio>=2.0.0",
     "isort>=8.0.1",
     "myst-parser>=4.0.1",
+    "sphinx>=8.2.3",
+    "sphinx-autobuild>=2025.8.25",
     "sphinx-copybutton>=0.5.2",
     "sphinx-markdown-tables>=0.0.17",
     "sphinx-rtd-theme>=3.0.2",
+    "sphinxcontrib-serializinghtml>=2.0.0",
+    "sphinxcontrib-svg2pdfconverter>=2.1.0",
 ]
