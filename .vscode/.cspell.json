@@ -1,14 +1,18 @@
 {
   "words": [
+    "ACTINST",
     "AMQP",
     "Dfile",
     "Fanout",
+    "Flowable",
     "freemarker",
     "ftlh",
     "javac",
     "javax",
     "jstl",
     "literalinclude",
+    "NVARCHAR",
+    "println",
     "smallseg",
     "springboot",
     "springframework",
