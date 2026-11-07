@@ -8,5 +8,5 @@
     "liveServer.settings.port": 5501,
     "esbonio.preview.synchronizeScroll": "previewWithEditor",
     "python.languageServer": "Pylance",
-    "python-envs.defaultEnvManager": "ms-python.python:pipenv"
+    "python-envs.defaultEnvManager": "ms-python.python:venv"
 }

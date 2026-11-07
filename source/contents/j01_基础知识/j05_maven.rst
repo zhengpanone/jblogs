@@ -2,6 +2,31 @@
 Maven
 ================
 
+settings.xml
+====================
+
+settings.xml 有两个存放位置，优先级：用户级 > 安装目录全局
+
+全局配置：maven安装目录 ``/conf/settings.xml``
+
+对本机所有用户生效；升级 Maven 时文件会被覆盖，不推荐在这里修改。
+
+用户级配置： ``~/.m2/settings.xml`` （推荐）
+
+- Windows：C:\Users\你的用户名.m2\settings.xml
+- Mac / Linux：/Users/你的用户名/.m2/settings.xml
+  
+只对当前操作系统用户生效，升级 Maven 不会丢失配置。
+
+中央仓库（central）：Maven 官方默认仓库，不用额外配置，外网访问
+
+私服（Nexus / Artifactory）：公司内部私有仓库，用来代理中央仓库、存放内部 jar 包、加速下载
+
+**生效顺序：全局 settings.xml → 用户 settings.xml（覆盖前者）→ pom.xml（优先级最高）**
+
+
+settings.xml 完整结构总览
+
 常用命令
 ==============
 
